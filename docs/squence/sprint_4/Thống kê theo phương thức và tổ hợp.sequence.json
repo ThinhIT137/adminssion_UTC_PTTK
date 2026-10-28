@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 4 · Thống kê theo phương thức và tổ hợp",
+    "output": "docs/squence/sprint_4/Thống kê theo phương thức và tổ hợp.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js admin",
+      "sublabel": "Bộ lọc năm",
+      "sources": [
+        {
+          "path": "src/router/thong_ke_router.py",
+          "line": 1,
+          "end_line": 93
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        },
+        {
+          "path": "src/repositories/thong_ke_repository.py",
+          "line": 1,
+          "end_line": 108
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score API",
+      "sublabel": "/thong-ke/xet-tuyen",
+      "sources": [
+        {
+          "path": "src/router/thong_ke_router.py",
+          "line": 1,
+          "end_line": 93
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        },
+        {
+          "path": "src/repositories/thong_ke_repository.py",
+          "line": 1,
+          "end_line": 108
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "type": "backend",
+      "label": "Service",
+      "sublabel": "Xử lý nghiệp vụ",
+      "sources": [
+        {
+          "path": "src/router/thong_ke_router.py",
+          "line": 1,
+          "end_line": 93
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        },
+        {
+          "path": "src/repositories/thong_ke_repository.py",
+          "line": 1,
+          "end_line": 108
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/thong_ke_router.py",
+          "line": 1,
+          "end_line": 93
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        },
+        {
+          "path": "src/repositories/thong_ke_repository.py",
+          "line": 1,
+          "end_line": 108
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "GET số liệu với JWT",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "svc",
+      "label": "Bộ lọc đã kiểm tra",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "svc",
+      "to": "db",
+      "label": "Đọc hồ sơ và danh mục",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "svc",
+      "label": "Dữ liệu đúng phạm vi",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "svc",
+      "to": "api",
+      "label": "Nhóm, đếm và tỷ lệ",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "JSON số liệu / lỗi",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 4; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Trúng tuyển chính thức phải dựa kết quả đã công bố; không lấy hồ sơ hợp lệ làm số đỗ.",
+        "P01 thuộc dashboard Next.js khác: số liệu fallback trên dashboard không được coi là dữ liệu của API này."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/thong_ke_router.py:1–93",
+        "backend_admission/backend_application_score/src/services/thong_ke_service.py:1–338",
+        "backend_admission/backend_application_score/src/repositories/thong_ke_repository.py:1–108"
+      ]
+    }
+  ]
+}

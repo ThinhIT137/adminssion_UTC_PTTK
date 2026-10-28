@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "068fdb04-86e9-4ea3-9c5a-7c918dfa9033",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.html",
+  "specification": {
+    "sha256": "54bde354a297f6bc9cc4740b2fc87ddb9cf8e305284b880f0067a9a942a042ba",
+    "bytes": 5558
+  },
+  "artifact": {
+    "sha256": "2a2af7fc7ec2bb941059882dba1b11de0202729a44c757ced6a57f5946ac0863",
+    "bytes": 835568
+  }
+}

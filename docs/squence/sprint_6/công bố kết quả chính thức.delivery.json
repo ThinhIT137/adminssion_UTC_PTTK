@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "e4e385af-b5c1-4e54-86a3-7243add32959",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.html",
+  "specification": {
+    "sha256": "498fa5b67e23ffedab1a754321cf4bb018f2fc627629b4a40087fe3add4c5b2d",
+    "bytes": 4420
+  },
+  "artifact": {
+    "sha256": "24e90593ff26ab25dd3efbd033c8f23d4a65baaeec1ede40c5fd9a92099c7c75",
+    "bytes": 830315
+  }
+}

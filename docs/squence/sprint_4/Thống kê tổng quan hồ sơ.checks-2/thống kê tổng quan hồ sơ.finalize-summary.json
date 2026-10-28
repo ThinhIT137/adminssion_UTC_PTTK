@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.sequence.json",
+    "sha256": "4cdcb472d6637482daac3752e75674ecf6807b743cc2c884940b0d37944faafe",
+    "bytes": 4833
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.html",
+    "sha256": "adbcef6f682aa197a823974c1c2b077697dfd79fa05c7ffb296d7ca6d29040ce",
+    "bytes": 831552
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [
+    {
+      "code": "i18n/locale-fallback",
+      "severity": "warning",
+      "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+      "subject": {
+        "diagramType": "sequence",
+        "path": "/meta/locale"
+      },
+      "evidence": {
+        "locale": "vi",
+        "bundledLocales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "ko",
+          "ar"
+        ]
+      },
+      "supportedFixes": [
+        "Supply meta.translations for this locale.",
+        "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.checks-2\\thống kê tổng quan hồ sơ.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.checks-2\\thống kê tổng quan hồ sơ.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.checks-2\\thống kê tổng quan hồ sơ.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 5179,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

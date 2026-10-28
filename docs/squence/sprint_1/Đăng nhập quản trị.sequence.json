@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Đăng nhập quản trị",
+    "output": "docs/squence/sprint_1/Đăng nhập quản trị.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Người dùng",
+      "sublabel": "Giao diện trình duyệt",
+      "sources": [
+        {
+          "path": "actions/auth.action.ts",
+          "line": 9,
+          "end_line": 27
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 30,
+          "end_line": 46
+        },
+        {
+          "path": "services/token.service.ts",
+          "line": 1,
+          "end_line": 63
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js",
+      "sublabel": "Server Action / API",
+      "sources": [
+        {
+          "path": "actions/auth.action.ts",
+          "line": 9,
+          "end_line": 27
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 30,
+          "end_line": 46
+        },
+        {
+          "path": "services/token.service.ts",
+          "line": 1,
+          "end_line": 63
+        }
+      ]
+    },
+    {
+      "id": "auth",
+      "type": "security",
+      "label": "Xác thực",
+      "sublabel": "Mật khẩu băm / JWT",
+      "sources": [
+        {
+          "path": "actions/auth.action.ts",
+          "line": 9,
+          "end_line": 27
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 30,
+          "end_line": 46
+        },
+        {
+          "path": "services/token.service.ts",
+          "line": 1,
+          "end_line": 63
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "actions/auth.action.ts",
+          "line": 9,
+          "end_line": 27
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 30,
+          "end_line": 46
+        },
+        {
+          "path": "services/token.service.ts",
+          "line": 1,
+          "end_line": 63
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "web",
+      "to": "next",
+      "label": "Gửi email và mật khẩu",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "next",
+      "to": "db",
+      "label": "Tìm admin theo email",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "next",
+      "label": "Tài khoản và mật khẩu băm",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "next",
+      "to": "auth",
+      "label": "Kiểm tra mật khẩu; ký JWT",
+      "variant": "security",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "auth",
+      "to": "next",
+      "label": "Access / refresh token",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "next",
+      "to": "web",
+      "label": "Ghi cookie khi hợp lệ",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào frontend_admission @ f85d93835621. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Sai mật khẩu: dừng trước bước ký token và trả lỗi. Không lưu mật khẩu vào JWT."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "frontend_admission/actions/auth.action.ts:9–27",
+        "frontend_admission/services/user.service.ts:30–46",
+        "frontend_admission/services/token.service.ts:1–63"
+      ]
+    }
+  ]
+}

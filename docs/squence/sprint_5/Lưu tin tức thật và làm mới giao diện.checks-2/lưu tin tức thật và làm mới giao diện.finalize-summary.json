@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.sequence.json",
+    "sha256": "62c7b1ce981a5a4ec3deddf3f84b5879629c7d8134d42b06f280d20b871b26b1",
+    "bytes": 3161
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.html",
+    "sha256": "888915acf82d6b03c34e46c7202e068128659222749687faae63db943a55f914",
+    "bytes": 828920
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [
+    {
+      "code": "i18n/locale-fallback",
+      "severity": "warning",
+      "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+      "subject": {
+        "diagramType": "sequence",
+        "path": "/meta/locale"
+      },
+      "evidence": {
+        "locale": "vi",
+        "bundledLocales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "ko",
+          "ar"
+        ]
+      },
+      "supportedFixes": [
+        "Supply meta.translations for this locale.",
+        "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.checks-2\\lưu tin tức thật và làm mới giao diện.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.checks-2\\lưu tin tức thật và làm mới giao diện.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.checks-2\\lưu tin tức thật và làm mới giao diện.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4515,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

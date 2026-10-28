@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 2 · Cập nhật trạng thái xét tuyển",
+    "output": "docs/squence/sprint_2/Cập nhật trạng thái xét tuyển.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Cán bộ",
+      "sublabel": "JWT admin",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 49,
+          "end_line": 77
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Workflow API",
+      "sublabel": "Bắt đầu xử lý",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 49,
+          "end_line": 77
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 49,
+          "end_line": 77
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "PATCH bắt đầu xét tuyển",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Khóa hồ sơ; đọc trạng thái",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Hồ sơ hợp lệ / lỗi",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Ghi dang_xu_ly và cán bộ",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "db",
+      "to": "api",
+      "label": "Flush thay đổi",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Trạng thái đang xử lý",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 2; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Chỉ chấp nhận từ hop_le và chưa công bố. Chốt điểm, quyết định và công bố là các sơ đồ riêng của Sprint 6."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/workflow_router.py:49–77",
+        "backend_admission/backend_application_score/src/core/database.py:1–43"
+      ]
+    }
+  ]
+}

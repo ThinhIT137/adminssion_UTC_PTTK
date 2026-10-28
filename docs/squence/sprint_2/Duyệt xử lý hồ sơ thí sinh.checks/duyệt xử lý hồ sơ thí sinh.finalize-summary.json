@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.sequence.json",
+    "sha256": "b3ca13d9e7155e8feecdbc3600294d882d24e04832db1999b9dc9c40c79af0ee",
+    "bytes": 4877
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.html",
+    "sha256": "f11f1db112d83551601fd28221c2709ad4a0ec8420b1f47d6420eefc34d8697c",
+    "bytes": 832860
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "fail",
+    "browser-check": "not-run"
+  },
+  "failedStage": "check",
+  "diagnostics": [
+    {
+      "code": "delivery/provenance-locked",
+      "severity": "error",
+      "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+      "subject": {
+        "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\.archify-delivery-lock.json",
+        "found": true
+      },
+      "supportedFixes": [
+        "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.checks\\duyệt xử lý hồ sơ thí sinh.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.checks\\duyệt xử lý hồ sơ thí sinh.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1431,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  }
+}

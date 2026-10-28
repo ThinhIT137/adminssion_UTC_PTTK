@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 2 · Nộp và xác minh điểm ĐGNL",
+    "output": "docs/squence/sprint_2/Nộp và xác minh điểm ĐGNL.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Thí sinh / admin",
+      "sublabel": "Hai thao tác riêng",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 57,
+          "end_line": 80
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 82,
+          "end_line": 136
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score service",
+      "sublabel": "Điểm ĐGNL",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 57,
+          "end_line": 80
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 82,
+          "end_line": 136
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 57,
+          "end_line": 80
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 82,
+          "end_line": 136
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    },
+    {
+      "id": "provider",
+      "type": "external",
+      "label": "Nguồn ĐGNL",
+      "sublabel": "Provider được cấu hình",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 57,
+          "end_line": 80
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 82,
+          "end_line": 136
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Thí sinh nộp điểm và minh chứng",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Kiểm tra CCCD và trùng năm",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Tham chiếu hợp lệ",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Lưu chứng chỉ chờ xác minh",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "db",
+      "to": "api",
+      "label": "Chứng chỉ",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Đã nhận; chưa xác minh",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "caller",
+      "to": "api",
+      "label": "Admin yêu cầu xác minh",
+      "variant": "security",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "provider",
+      "label": "Đối chiếu nguồn cấu hình",
+      "variant": "default",
+      "y": 576
+    },
+    {
+      "id": "message-9",
+      "from": "provider",
+      "to": "api",
+      "label": "Kết quả / lỗi nguồn",
+      "variant": "return",
+      "y": 634
+    },
+    {
+      "id": "message-10",
+      "from": "api",
+      "to": "db",
+      "label": "Nếu đạt: cập nhật xác minh",
+      "variant": "default",
+      "y": 692
+    },
+    {
+      "id": "message-11",
+      "from": "db",
+      "to": "api",
+      "label": "Trạng thái lưu",
+      "variant": "return",
+      "y": 750
+    },
+    {
+      "id": "message-12",
+      "from": "api",
+      "to": "caller",
+      "label": "Kết quả xác minh",
+      "variant": "return",
+      "y": 808
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 2; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Hai lượt gửi độc lập. Provider thật chưa được nghiệm thu; không tự coi minh chứng tải lên là dữ liệu đã xác thực."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/diem_router.py:57–80",
+        "backend_admission/backend_application_score/src/services/diem_service.py:82–136",
+        "backend_admission/backend_application_score/src/repositories/diem_repository.py:1–92"
+      ]
+    }
+  ]
+}

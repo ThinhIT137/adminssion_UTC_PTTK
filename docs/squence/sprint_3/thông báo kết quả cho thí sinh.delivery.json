@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "8f2670a7-5e9a-41e5-bca7-672a8174de2b",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.html",
+  "specification": {
+    "sha256": "afef30ebaac2a9ea5b5e3e82ff5d08ced5caff0f17f825b536b9909efe9bbf72",
+    "bytes": 5337
+  },
+  "artifact": {
+    "sha256": "2831c113841f377903de6ffcd25a20b761434f2b7a135812d7d70c4ef6432905",
+    "bytes": 834046
+  }
+}

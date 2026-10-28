@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d8b89456-27a3-4773-b485-2ca1889b52b0",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.html",
+  "specification": {
+    "sha256": "62c7b1ce981a5a4ec3deddf3f84b5879629c7d8134d42b06f280d20b871b26b1",
+    "bytes": 3161
+  },
+  "artifact": {
+    "sha256": "888915acf82d6b03c34e46c7202e068128659222749687faae63db943a55f914",
+    "bytes": 828920
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7c08d992-59ed-4388-ad07-39d448d9fc93",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.html",
+  "specification": {
+    "sha256": "97b5cd5edf28a9c34d9e4e44e64b8e423bbfd3bb473cdbb1bc1a28b462c8039c",
+    "bytes": 4107
+  },
+  "artifact": {
+    "sha256": "b27970d1bad2964c2ecb2ad4349762e70dc9e0034ffb8050712c24cf3346e887",
+    "bytes": 830881
+  }
+}

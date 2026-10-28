@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.sequence.json",
+    "sha256": "fe813685cb9552645be7ee818f9bcde75e31fe3e6f50cff092c69813a4cd0618",
+    "bytes": 3924
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.html",
+    "sha256": "4f01e714fdc165972691cd90f8c1765a29c135e1677025989fa4a39b5732b488",
+    "bytes": 828354
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [
+    {
+      "code": "i18n/locale-fallback",
+      "severity": "warning",
+      "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+      "subject": {
+        "diagramType": "sequence",
+        "path": "/meta/locale"
+      },
+      "evidence": {
+        "locale": "vi",
+        "bundledLocales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "ko",
+          "ar"
+        ]
+      },
+      "supportedFixes": [
+        "Supply meta.translations for this locale.",
+        "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.checks-2\\xử lý lỗi khi duyệt và từ chối hồ sơ.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.checks-2\\xử lý lỗi khi duyệt và từ chối hồ sơ.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.checks-2\\xử lý lỗi khi duyệt và từ chối hồ sơ.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4320,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

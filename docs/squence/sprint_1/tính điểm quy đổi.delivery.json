@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9234df40-b219-4d60-8327-72d7f667575a",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.html",
+  "specification": {
+    "sha256": "cdbb87cf0d6e33b75ade5253bba196dea4f9a66e3a1d70d2853a060fec8ff145",
+    "bytes": 4801
+  },
+  "artifact": {
+    "sha256": "60df348bcb998905c965d1587362f406088e1ffe37db539b15f24f03e3a8eb31",
+    "bytes": 831365
+  }
+}

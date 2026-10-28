@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9a1d3381-317d-45cd-a9ba-968442392c90",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.html",
+  "specification": {
+    "sha256": "63156e85f62d1b5bceb99e4136bc19e571511934fbc368e70c827e85866af297",
+    "bytes": 4863
+  },
+  "artifact": {
+    "sha256": "d35c972e7aa2f1083b20ef6af6067cd4a0ca85c8fe7583c1ae3d8bd37989dfd6",
+    "bytes": 831597
+  }
+}

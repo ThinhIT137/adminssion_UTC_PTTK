@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 2 · Đồng bộ điểm thi THPT",
+    "output": "docs/squence/sprint_2/Đồng bộ điểm thi THPT.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Quản trị",
+      "sublabel": "Yêu cầu đồng bộ",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 35,
+          "end_line": 54
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 40,
+          "end_line": 80
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score service",
+      "sublabel": "DiemService",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 35,
+          "end_line": 54
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 40,
+          "end_line": 80
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    },
+    {
+      "id": "provider",
+      "type": "external",
+      "label": "Nguồn cấu hình",
+      "sublabel": "HTTP / mock / disabled",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 35,
+          "end_line": 54
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 40,
+          "end_line": 80
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 35,
+          "end_line": 54
+        },
+        {
+          "path": "src/services/diem_service.py",
+          "line": 40,
+          "end_line": 80
+        },
+        {
+          "path": "src/repositories/diem_repository.py",
+          "line": 1,
+          "end_line": 92
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Đồng bộ năm học",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "provider",
+      "label": "Fetch điểm theo provider",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "provider",
+      "to": "api",
+      "label": "Dữ liệu hoặc lỗi nguồn",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Nếu có dữ liệu: kiểm tra mã",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "db",
+      "to": "api",
+      "label": "Thí sinh / môn hợp lệ",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "db",
+      "label": "Upsert điểm từng thí sinh",
+      "variant": "default",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "db",
+      "to": "api",
+      "label": "Kết quả ghi",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "caller",
+      "label": "Tổng thành công và lỗi",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 2; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Nhánh nguồn lỗi dừng trước bước ghi DB. Chưa xác minh API Bộ thật; có adapter không đồng nghĩa đã kết nối."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/diem_router.py:35–54",
+        "backend_admission/backend_application_score/src/services/diem_service.py:40–80",
+        "backend_admission/backend_application_score/src/repositories/diem_repository.py:1–92"
+      ]
+    }
+  ]
+}

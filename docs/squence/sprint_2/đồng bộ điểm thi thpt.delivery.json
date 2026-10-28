@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "64151382-fd21-43bf-b554-177e6ac7fcc7",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.html",
+  "specification": {
+    "sha256": "9089c9d88e0ee05ed331c2dc69e2e1b96e4a849b7f28d3382617799a529584af",
+    "bytes": 5016
+  },
+  "artifact": {
+    "sha256": "6f914b66265f8e6941123027a17a5e8b6bbfa543ee2dfe7a81b5da3efd275432",
+    "bytes": 833120
+  }
+}

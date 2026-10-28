@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "52e87a51-1502-4cb1-9800-611b99846775",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.html",
+  "specification": {
+    "sha256": "490bbe6854195007160c960f9fb412bb0e5152f9438c0b033ab56f199c2cbed3",
+    "bytes": 4085
+  },
+  "artifact": {
+    "sha256": "14e716b89280482c0a25ab634561c58be4deddab23f0c3e69a43fbcef43feb0f",
+    "bytes": 830840
+  }
+}

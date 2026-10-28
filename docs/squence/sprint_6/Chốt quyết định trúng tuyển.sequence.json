@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 6 · Chốt quyết định trúng tuyển",
+    "output": "docs/squence/sprint_6/Chốt quyết định trúng tuyển.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Admin",
+      "sublabel": "Danh sách có căn cứ",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 139,
+          "end_line": 209
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Workflow API",
+      "sublabel": "Chốt kết quả",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 139,
+          "end_line": 209
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 139,
+          "end_line": 209
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "POST danh sách quyết định",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Khóa hồ sơ, thí sinh, quota",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Điểm, ngưỡng và trạng thái",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Ghi do / truot, người chốt",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "api",
+      "to": "db",
+      "label": "Đếm quota và trùng thí sinh",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "db",
+      "to": "api",
+      "label": "Đạt / vi phạm ràng buộc",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "api",
+      "to": "caller",
+      "label": "Commit hoặc rollback",
+      "variant": "return",
+      "y": 518
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 6; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Chưa công bố sau khi chốt. Sai quota/trùng thí sinh làm transaction rollback.",
+        "P04: thiếu cutoff có thể bỏ qua khối ngưỡng; đây chưa phải engine tự xếp hạng/lọc nguyện vọng."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/workflow_router.py:139–209",
+        "backend_admission/backend_application_score/src/core/database.py:1–43"
+      ]
+    }
+  ]
+}

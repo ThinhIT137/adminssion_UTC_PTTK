@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.sequence.json",
+    "sha256": "a574e642a5806c0581fd43bdeb33c96576b729c48edd9d74557820d2630d8190",
+    "bytes": 3912
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html"
+  },
+  "gates": {
+    "validate": "not-run",
+    "deliver": "fail",
+    "check": "not-run",
+    "browser-check": "not-run"
+  },
+  "failedStage": "deliver",
+  "diagnostics": [
+    {
+      "code": "delivery/concurrent-attempt",
+      "severity": "error",
+      "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\".",
+      "subject": {
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\"."
+      },
+      "supportedFixes": [
+        "wait for the active delivery to finish, then retry"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.checks\\quản lý vai trò và phân quyền.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.checks\\quản lý vai trò và phân quyền.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 445,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  }
+}

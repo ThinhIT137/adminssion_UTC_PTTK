@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.sequence.json",
+    "sha256": "54bde354a297f6bc9cc4740b2fc87ddb9cf8e305284b880f0067a9a942a042ba",
+    "bytes": 5558
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.html",
+    "sha256": "2a2af7fc7ec2bb941059882dba1b11de0202729a44c757ced6a57f5946ac0863",
+    "bytes": 835568
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "fail",
+    "browser-check": "not-run"
+  },
+  "failedStage": "check",
+  "diagnostics": [
+    {
+      "code": "delivery/provenance-locked",
+      "severity": "error",
+      "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+      "subject": {
+        "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json",
+        "found": true
+      },
+      "supportedFixes": [
+        "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.checks\\trắc nghiệm mbti.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.checks\\trắc nghiệm mbti.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1614,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  }
+}

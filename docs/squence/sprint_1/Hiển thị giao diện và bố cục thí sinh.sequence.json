@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Hiển thị giao diện và bố cục thí sinh",
+    "output": "docs/squence/sprint_1/Hiển thị giao diện và bố cục thí sinh.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Người dùng",
+      "sublabel": "Giao diện trình duyệt",
+      "sources": [
+        {
+          "path": "app/(main)/layout.tsx",
+          "line": 1,
+          "end_line": 98
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js",
+      "sublabel": "Server Action / API",
+      "sources": [
+        {
+          "path": "app/(main)/layout.tsx",
+          "line": 1,
+          "end_line": 98
+        }
+      ]
+    },
+    {
+      "id": "layout",
+      "type": "frontend",
+      "label": "Layout chung",
+      "sublabel": "Header / sidebar / footer",
+      "sources": [
+        {
+          "path": "app/(main)/layout.tsx",
+          "line": 1,
+          "end_line": 98
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "web",
+      "to": "next",
+      "label": "Mở trang thí sinh",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "next",
+      "to": "layout",
+      "label": "Lắp bố cục và nội dung",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "layout",
+      "to": "next",
+      "label": "Cây giao diện",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "next",
+      "to": "web",
+      "label": "HTML / React payload",
+      "variant": "return",
+      "y": 344
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào frontend_admission @ f85d93835621. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Mô tả bố cục ở commit đã neo; thay đổi giao diện local sau commit không được giả làm bằng chứng HEAD."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "frontend_admission/app/(main)/layout.tsx:1–98"
+      ]
+    }
+  ]
+}

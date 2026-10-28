@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Hỏi đáp AI Chatbot",
+    "output": "docs/squence/sprint_1/Hỏi đáp AI Chatbot.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_ai_ml.git",
+      "revision": "3c487756b7f3ddb98e4729c8a2c903c8a5c4b8eb",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js",
+      "sublabel": "Trang chat / widget",
+      "sources": [
+        {
+          "path": "src/router/chat_router.py",
+          "line": 17,
+          "end_line": 28
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 41,
+          "end_line": 102
+        },
+        {
+          "path": "src/ml/llm/loader.py",
+          "line": 1,
+          "end_line": 123
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "AI service",
+      "sublabel": "ChatService",
+      "sources": [
+        {
+          "path": "src/router/chat_router.py",
+          "line": 17,
+          "end_line": 28
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 41,
+          "end_line": 102
+        },
+        {
+          "path": "src/ml/llm/loader.py",
+          "line": 1,
+          "end_line": 123
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "type": "backend",
+      "label": "RAG",
+      "sublabel": "Ngữ cảnh trong bộ nhớ",
+      "sources": [
+        {
+          "path": "src/router/chat_router.py",
+          "line": 17,
+          "end_line": 28
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 41,
+          "end_line": 102
+        },
+        {
+          "path": "src/ml/llm/loader.py",
+          "line": 1,
+          "end_line": 123
+        }
+      ]
+    },
+    {
+      "id": "llm",
+      "type": "cloud",
+      "label": "LLM ngoài",
+      "sublabel": "NVIDIA NIM",
+      "sources": [
+        {
+          "path": "src/router/chat_router.py",
+          "line": 17,
+          "end_line": 28
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 41,
+          "end_line": 102
+        },
+        {
+          "path": "src/ml/llm/loader.py",
+          "line": 1,
+          "end_line": 123
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "POST câu hỏi và session",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "rag",
+      "label": "Retrieve ngữ cảnh top 3",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "rag",
+      "to": "api",
+      "label": "Các đoạn liên quan",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "llm",
+      "label": "Prompt gồm câu hỏi + ngữ cảnh",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "llm",
+      "to": "api",
+      "label": "Nội dung / lỗi kết nối",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Câu trả lời, nguồn và session",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_ai_ml_latest @ 3c487756b7f3. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "LLM lỗi: AI trả nội dung hướng dẫn liên hệ; không đồng nghĩa mô hình đã trả lời thành công.",
+        "RAG dùng dữ liệu đã nạp; không vẽ một SELECT DB cho từng câu hỏi khi source không làm vậy."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_ai_ml_latest/src/router/chat_router.py:17–28",
+        "backend_admission/backend_ai_ml_latest/src/services/chat_service.py:41–102",
+        "backend_admission/backend_ai_ml_latest/src/ml/llm/loader.py:1–123"
+      ]
+    }
+  ]
+}

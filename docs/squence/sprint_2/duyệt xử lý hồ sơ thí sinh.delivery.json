@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "5f232780-4718-43ca-947e-f8242e415861",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.html",
+  "specification": {
+    "sha256": "b3ca13d9e7155e8feecdbc3600294d882d24e04832db1999b9dc9c40c79af0ee",
+    "bytes": 4877
+  },
+  "artifact": {
+    "sha256": "f11f1db112d83551601fd28221c2709ad4a0ec8420b1f47d6420eefc34d8697c",
+    "bytes": 832860
+  }
+}

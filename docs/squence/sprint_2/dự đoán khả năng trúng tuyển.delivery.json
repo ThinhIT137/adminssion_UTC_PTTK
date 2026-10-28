@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "cf354f84-efa5-4d3a-b4a5-80c5a7dd7767",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.html",
+  "specification": {
+    "sha256": "727a58127df075774f19300f0b7f68a63ff269ffa94b3166244dd5ff41f6965b",
+    "bytes": 3879
+  },
+  "artifact": {
+    "sha256": "5cad0d0fac844fe8b821d09ffab602ce9cd2858c5fc84dcc10b6d960e1fb1838",
+    "bytes": 827715
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Hiển thị giao diện quản trị",
+    "output": "docs/squence/sprint_1/Hiển thị giao diện quản trị.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Người dùng",
+      "sublabel": "Giao diện trình duyệt",
+      "sources": [
+        {
+          "path": "app/admin/(dashboard)/layout.tsx",
+          "line": 1,
+          "end_line": 25
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 96,
+          "end_line": 143
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js",
+      "sublabel": "Server Action / API",
+      "sources": [
+        {
+          "path": "app/admin/(dashboard)/layout.tsx",
+          "line": 1,
+          "end_line": 25
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 96,
+          "end_line": 143
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "app/admin/(dashboard)/layout.tsx",
+          "line": 1,
+          "end_line": 25
+        },
+        {
+          "path": "services/user.service.ts",
+          "line": 96,
+          "end_line": 143
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "web",
+      "to": "next",
+      "label": "Mở trang admin",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "next",
+      "to": "db",
+      "label": "Đọc tài khoản từ phiên",
+      "variant": "security",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "next",
+      "label": "Tài khoản / vai trò",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "next",
+      "to": "web",
+      "label": "Layout admin hoặc chuyển login",
+      "variant": "return",
+      "y": 344
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào frontend_admission @ f85d93835621. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Sơ đồ mô tả tương tác có trong source, không xác nhận test hoặc triển khai đã thành công."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "frontend_admission/app/admin/(dashboard)/layout.tsx:1–25",
+        "frontend_admission/services/user.service.ts:96–143"
+      ]
+    }
+  ]
+}

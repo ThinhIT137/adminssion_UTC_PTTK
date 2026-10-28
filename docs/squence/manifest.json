@@ -1,0 +1,368 @@
+{
+  "generatedAt": "2026-10-25T12:57:54.365Z",
+  "repositories": {
+    "next": {
+      "root": "frontend_admission",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "dirty": "M actions/compare.action.ts\n M actions/recommended-programs.action.ts\n M app/(main)/hoi-dap-ai/ChatbotClient.tsx\n M app/(main)/hoi-dap-ai/page.tsx\n M app/(main)/ket-qua-tu-van/ApiResultClient.tsx\n M app/(main)/layout.tsx\n M app/(main)/loading.tsx\n M app/(main)/nop-ho-so/NopHoSoClient.tsx\n M app/(main)/nop-ho-so/page.tsx\n M app/(main)/so-sanh-chuong-trinh/CompareClient.tsx\n M app/(main)/so-sanh-chuong-trinh/ProgramPicker.tsx\n M app/(main)/so-sanh-chuong-trinh/page.tsx\n M app/(main)/thong-tin-tuyen-sinh/AdmissionHistoryTable.tsx\n M app/(main)/thong-tin-tuyen-sinh/ThongTinTuyenSinhClient.tsx\n M app/(main)/thong-tin-tuyen-sinh/page.tsx\n M app/(main)/tinh-diem-quy-doi/TinhDiemQuyDoiClient.tsx\n M app/(main)/tinh-diem-quy-doi/eligibility.ts\n M app/(main)/tinh-diem-quy-doi/page.tsx\n M app/(main)/tra-cuu-nganh-hoc/MajorLookupClient.tsx\n M app/(main)/tra-cuu-nganh-hoc/page.tsx\n M app/(main)/trac-nghiem-mbti/MBTITestClient.tsx\n M app/api/backend/[service]/[...path]/route.ts\n M components/layout/Sidebar.tsx\n M components/layout/footer.tsx\n M components/tra-cuu-nganh-hoc/FilterAndSearchBar.tsx\n M components/tra-cuu-nganh-hoc/MajorCard.tsx\n M components/ui/ChatWidget.tsx\n M components/ui/DisclaimerBanner.tsx\n M components/ui/Timeline.tsx\n M libs/api-services/backend.server.ts\n M libs/api-services/browser-api.ts\n M prisma.config.ts"
+    },
+    "score": {
+      "root": "backend_admission/backend_application_score",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "dirty": "M app.py\n M src/core/config.py\n M src/data/mock_scores.json\n M src/models/__init__.py\n M src/router/candidate_auth_router.py\n M src/router/workflow_router.py\n M src/schemas/diem_schema.py\n M src/services/admission_service.py\n M src/services/candidate_preferences_service.py\n M src/services/ho_so_service.py"
+    },
+    "ai": {
+      "root": "backend_admission/backend_ai_ml_latest",
+      "revision": "3c487756b7f3ddb98e4729c8a2c903c8a5c4b8eb",
+      "url": "https://github.com/ThinhIT137/backend_ai_ml.git",
+      "dirty": "M tests/conftest.py"
+    }
+  },
+  "diagrams": [
+    {
+      "sprint": 1,
+      "title": "Hiển thị giao diện và bố cục thí sinh",
+      "candidate": "docs/squence/sprint_1/Hiển thị giao diện và bố cục thí sinh.sequence.json",
+      "output": "docs/squence/sprint_1/Hiển thị giao diện và bố cục thí sinh.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Hiển thị giao diện quản trị",
+      "candidate": "docs/squence/sprint_1/Hiển thị giao diện quản trị.sequence.json",
+      "output": "docs/squence/sprint_1/Hiển thị giao diện quản trị.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Đăng nhập quản trị",
+      "candidate": "docs/squence/sprint_1/Đăng nhập quản trị.sequence.json",
+      "output": "docs/squence/sprint_1/Đăng nhập quản trị.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Quản lý tài khoản quản trị",
+      "candidate": "docs/squence/sprint_1/Quản lý tài khoản quản trị.sequence.json",
+      "output": "docs/squence/sprint_1/Quản lý tài khoản quản trị.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Quản lý vai trò và phân quyền",
+      "candidate": "docs/squence/sprint_1/Quản lý vai trò và phân quyền.sequence.json",
+      "output": "docs/squence/sprint_1/Quản lý vai trò và phân quyền.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Quản trị ngành học",
+      "candidate": "docs/squence/sprint_1/Quản trị ngành học.sequence.json",
+      "output": "docs/squence/sprint_1/Quản trị ngành học.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Quản trị chương trình đào tạo",
+      "candidate": "docs/squence/sprint_1/Quản trị chương trình đào tạo.sequence.json",
+      "output": "docs/squence/sprint_1/Quản trị chương trình đào tạo.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 1,
+      "title": "Quản lý dữ liệu điểm chuẩn các năm",
+      "candidate": "docs/squence/sprint_1/Quản lý dữ liệu điểm chuẩn các năm.sequence.json",
+      "output": "docs/squence/sprint_1/Quản lý dữ liệu điểm chuẩn các năm.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 1,
+      "title": "Tính điểm quy đổi",
+      "candidate": "docs/squence/sprint_1/Tính điểm quy đổi.sequence.json",
+      "output": "docs/squence/sprint_1/Tính điểm quy đổi.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 1,
+      "title": "Nộp hồ sơ học bạ chứng chỉ giải thưởng",
+      "candidate": "docs/squence/sprint_1/Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+      "output": "docs/squence/sprint_1/Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 1,
+      "title": "Tra cứu trạng thái hồ sơ",
+      "candidate": "docs/squence/sprint_1/Tra cứu trạng thái hồ sơ.sequence.json",
+      "output": "docs/squence/sprint_1/Tra cứu trạng thái hồ sơ.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 1,
+      "title": "Trắc nghiệm MBTI",
+      "candidate": "docs/squence/sprint_1/Trắc nghiệm MBTI.sequence.json",
+      "output": "docs/squence/sprint_1/Trắc nghiệm MBTI.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 1,
+      "title": "Quản lý tri thức chatbot",
+      "candidate": "docs/squence/sprint_1/Quản lý tri thức chatbot.sequence.json",
+      "output": "docs/squence/sprint_1/Quản lý tri thức chatbot.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 1,
+      "title": "Hỏi đáp AI Chatbot",
+      "candidate": "docs/squence/sprint_1/Hỏi đáp AI Chatbot.sequence.json",
+      "output": "docs/squence/sprint_1/Hỏi đáp AI Chatbot.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 2,
+      "title": "Quản lý tổ hợp xét tuyển",
+      "candidate": "docs/squence/sprint_2/Quản lý tổ hợp xét tuyển.sequence.json",
+      "output": "docs/squence/sprint_2/Quản lý tổ hợp xét tuyển.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 2,
+      "title": "Quản lý phương thức xét tuyển",
+      "candidate": "docs/squence/sprint_2/Quản lý phương thức xét tuyển.sequence.json",
+      "output": "docs/squence/sprint_2/Quản lý phương thức xét tuyển.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 2,
+      "title": "Quản lý mốc thời gian tuyển sinh",
+      "candidate": "docs/squence/sprint_2/Quản lý mốc thời gian tuyển sinh.sequence.json",
+      "output": "docs/squence/sprint_2/Quản lý mốc thời gian tuyển sinh.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 2,
+      "title": "Thiết lập chỉ tiêu tuyển sinh đầu mùa",
+      "candidate": "docs/squence/sprint_2/Thiết lập chỉ tiêu tuyển sinh đầu mùa.sequence.json",
+      "output": "docs/squence/sprint_2/Thiết lập chỉ tiêu tuyển sinh đầu mùa.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 2,
+      "title": "Duyệt xử lý hồ sơ thí sinh",
+      "candidate": "docs/squence/sprint_2/Duyệt xử lý hồ sơ thí sinh.sequence.json",
+      "output": "docs/squence/sprint_2/Duyệt xử lý hồ sơ thí sinh.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 2,
+      "title": "Cập nhật trạng thái xét tuyển",
+      "candidate": "docs/squence/sprint_2/Cập nhật trạng thái xét tuyển.sequence.json",
+      "output": "docs/squence/sprint_2/Cập nhật trạng thái xét tuyển.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 2,
+      "title": "Đồng bộ điểm thi THPT",
+      "candidate": "docs/squence/sprint_2/Đồng bộ điểm thi THPT.sequence.json",
+      "output": "docs/squence/sprint_2/Đồng bộ điểm thi THPT.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 2,
+      "title": "Nộp và xác minh điểm ĐGNL",
+      "candidate": "docs/squence/sprint_2/Nộp và xác minh điểm ĐGNL.sequence.json",
+      "output": "docs/squence/sprint_2/Nộp và xác minh điểm ĐGNL.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 2,
+      "title": "Xem kết quả tư vấn hướng nghiệp",
+      "candidate": "docs/squence/sprint_2/Xem kết quả tư vấn hướng nghiệp.sequence.json",
+      "output": "docs/squence/sprint_2/Xem kết quả tư vấn hướng nghiệp.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 2,
+      "title": "Dự đoán khả năng trúng tuyển",
+      "candidate": "docs/squence/sprint_2/Dự đoán khả năng trúng tuyển.sequence.json",
+      "output": "docs/squence/sprint_2/Dự đoán khả năng trúng tuyển.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 2,
+      "title": "Dự đoán điểm chuẩn chương trình",
+      "candidate": "docs/squence/sprint_2/Dự đoán điểm chuẩn chương trình.sequence.json",
+      "output": "docs/squence/sprint_2/Dự đoán điểm chuẩn chương trình.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 3,
+      "title": "Xem thông tin tuyển sinh",
+      "candidate": "docs/squence/sprint_3/Xem thông tin tuyển sinh.sequence.json",
+      "output": "docs/squence/sprint_3/Xem thông tin tuyển sinh.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Quản lý tin tức quy chế và hướng dẫn",
+      "candidate": "docs/squence/sprint_3/Quản lý tin tức quy chế và hướng dẫn.sequence.json",
+      "output": "docs/squence/sprint_3/Quản lý tin tức quy chế và hướng dẫn.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Xem lộ trình tuyển sinh và nhập học",
+      "candidate": "docs/squence/sprint_3/Xem lộ trình tuyển sinh và nhập học.sequence.json",
+      "output": "docs/squence/sprint_3/Xem lộ trình tuyển sinh và nhập học.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Tra cứu ngành học",
+      "candidate": "docs/squence/sprint_3/Tra cứu ngành học.sequence.json",
+      "output": "docs/squence/sprint_3/Tra cứu ngành học.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Tra cứu chương trình đào tạo",
+      "candidate": "docs/squence/sprint_3/Tra cứu chương trình đào tạo.sequence.json",
+      "output": "docs/squence/sprint_3/Tra cứu chương trình đào tạo.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Tích hợp API hồ sơ và điểm",
+      "candidate": "docs/squence/sprint_3/Tích hợp API hồ sơ và điểm.sequence.json",
+      "output": "docs/squence/sprint_3/Tích hợp API hồ sơ và điểm.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Tích hợp API MBTI và Chatbot",
+      "candidate": "docs/squence/sprint_3/Tích hợp API MBTI và Chatbot.sequence.json",
+      "output": "docs/squence/sprint_3/Tích hợp API MBTI và Chatbot.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 3,
+      "title": "Tra cứu kết quả trúng tuyển",
+      "candidate": "docs/squence/sprint_3/Tra cứu kết quả trúng tuyển.sequence.json",
+      "output": "docs/squence/sprint_3/Tra cứu kết quả trúng tuyển.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 3,
+      "title": "Thông báo kết quả cho thí sinh",
+      "candidate": "docs/squence/sprint_3/Thông báo kết quả cho thí sinh.sequence.json",
+      "output": "docs/squence/sprint_3/Thông báo kết quả cho thí sinh.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 4,
+      "title": "Thống kê tổng quan hồ sơ",
+      "candidate": "docs/squence/sprint_4/Thống kê tổng quan hồ sơ.sequence.json",
+      "output": "docs/squence/sprint_4/Thống kê tổng quan hồ sơ.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 4,
+      "title": "Thống kê theo ngành học",
+      "candidate": "docs/squence/sprint_4/Thống kê theo ngành học.sequence.json",
+      "output": "docs/squence/sprint_4/Thống kê theo ngành học.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 4,
+      "title": "Thống kê theo phương thức và tổ hợp",
+      "candidate": "docs/squence/sprint_4/Thống kê theo phương thức và tổ hợp.sequence.json",
+      "output": "docs/squence/sprint_4/Thống kê theo phương thức và tổ hợp.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 4,
+      "title": "Báo cáo kết quả trúng tuyển",
+      "candidate": "docs/squence/sprint_4/Báo cáo kết quả trúng tuyển.sequence.json",
+      "output": "docs/squence/sprint_4/Báo cáo kết quả trúng tuyển.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 4,
+      "title": "Xuất báo cáo CSV",
+      "candidate": "docs/squence/sprint_4/Xuất báo cáo CSV.sequence.json",
+      "output": "docs/squence/sprint_4/Xuất báo cáo CSV.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 4,
+      "title": "In và lưu báo cáo PDF",
+      "candidate": "docs/squence/sprint_4/In và lưu báo cáo PDF.sequence.json",
+      "output": "docs/squence/sprint_4/In và lưu báo cáo PDF.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 5,
+      "title": "Xử lý lỗi khi duyệt và từ chối hồ sơ",
+      "candidate": "docs/squence/sprint_5/Xử lý lỗi khi duyệt và từ chối hồ sơ.sequence.json",
+      "output": "docs/squence/sprint_5/Xử lý lỗi khi duyệt và từ chối hồ sơ.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 5,
+      "title": "Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển",
+      "candidate": "docs/squence/sprint_5/Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.sequence.json",
+      "output": "docs/squence/sprint_5/Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 5,
+      "title": "Lưu tin tức thật và làm mới giao diện",
+      "candidate": "docs/squence/sprint_5/Lưu tin tức thật và làm mới giao diện.sequence.json",
+      "output": "docs/squence/sprint_5/Lưu tin tức thật và làm mới giao diện.html",
+      "repoRoot": "frontend_admission"
+    },
+    {
+      "sprint": 5,
+      "title": "Đồng bộ tri thức Chatbot sau cập nhật",
+      "candidate": "docs/squence/sprint_5/Đồng bộ tri thức Chatbot sau cập nhật.sequence.json",
+      "output": "docs/squence/sprint_5/Đồng bộ tri thức Chatbot sau cập nhật.html",
+      "repoRoot": "backend_admission/backend_ai_ml_latest"
+    },
+    {
+      "sprint": 6,
+      "title": "Chốt điểm xét tuyển từ hồ sơ",
+      "candidate": "docs/squence/sprint_6/Chốt điểm xét tuyển từ hồ sơ.sequence.json",
+      "output": "docs/squence/sprint_6/Chốt điểm xét tuyển từ hồ sơ.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 6,
+      "title": "Chốt quyết định trúng tuyển",
+      "candidate": "docs/squence/sprint_6/Chốt quyết định trúng tuyển.sequence.json",
+      "output": "docs/squence/sprint_6/Chốt quyết định trúng tuyển.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 6,
+      "title": "Công bố kết quả chính thức",
+      "candidate": "docs/squence/sprint_6/Công bố kết quả chính thức.sequence.json",
+      "output": "docs/squence/sprint_6/Công bố kết quả chính thức.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 6,
+      "title": "Đối soát tra cứu thống kê và báo cáo",
+      "candidate": "docs/squence/sprint_6/Đối soát tra cứu thống kê và báo cáo.sequence.json",
+      "output": "docs/squence/sprint_6/Đối soát tra cứu thống kê và báo cáo.html",
+      "repoRoot": "backend_admission/backend_application_score"
+    },
+    {
+      "sprint": 1,
+      "title": "Thêm dữ liệu mẫu kiểm thử",
+      "candidate": "docs/squence/sprint_1/Thêm dữ liệu mẫu kiểm thử.sequence.json",
+      "output": "docs/squence/sprint_1/Thêm dữ liệu mẫu kiểm thử.html",
+      "repoRoot": "frontend_admission"
+    }
+  ]
+}

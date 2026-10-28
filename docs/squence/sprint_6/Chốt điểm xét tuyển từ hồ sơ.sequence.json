@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 6 · Chốt điểm xét tuyển từ hồ sơ",
+    "output": "docs/squence/sprint_6/Chốt điểm xét tuyển từ hồ sơ.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Admin",
+      "sublabel": "Hồ sơ đang xử lý",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 39,
+          "end_line": 136
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Workflow API",
+      "sublabel": "Chốt điểm",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 39,
+          "end_line": 136
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 39,
+          "end_line": 136
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "convert",
+      "type": "backend",
+      "label": "Quy đổi",
+      "sublabel": "Công thức / JSON",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 39,
+          "end_line": 136
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Chọn nguồn điểm và căn cứ",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Khóa hồ sơ chưa công bố",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Bảng điểm / chứng chỉ",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "convert",
+      "label": "Nếu cần: quy đổi điểm",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "convert",
+      "to": "api",
+      "label": "Điểm gốc đã quy đổi",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "db",
+      "label": "Ghi tổng, ưu tiên và trace",
+      "variant": "default",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "db",
+      "to": "api",
+      "label": "Flush trong transaction",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "caller",
+      "label": "Điểm đã chốt hoặc lỗi",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 6; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Manual nhận điểm đã đối soát; exempt không cộng ưu tiên. UI hiện tại chủ yếu nhập tay.",
+        "P03: chưa kiểm tra đủ loại/năm bảng điểm, loại/hạn chứng chỉ. Không mô tả những guard đó như đã có."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/workflow_router.py:39–136",
+        "backend_admission/backend_application_score/src/services/conversion_service.py:1–29",
+        "backend_admission/backend_application_score/src/core/database.py:1–43"
+      ]
+    }
+  ]
+}

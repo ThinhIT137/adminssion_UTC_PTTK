@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "ef978930-e940-4092-9b31-198c9cb5a467",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+  "specification": {
+    "sha256": "b6691765b31c304b20926c548a8c6ac4f942e39ad31d0f84a859863f007f0d75",
+    "bytes": 5723
+  },
+  "artifact": {
+    "sha256": "4bfde2307b3105f2f27321778cdae718f148c68a3865511b2b2cbab3f9061d7d",
+    "bytes": 836416
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b9f39760-cf95-4f34-820f-4cb734721b21",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.html",
+  "specification": {
+    "sha256": "9ea3395e91262fc6cdf0012496bc28518f9d6b76efd0523e83bae0dc2428ff84",
+    "bytes": 4624
+  },
+  "artifact": {
+    "sha256": "673493dd8e0234040c9c2b2222082cdb0fe6577ac1a14c7ebd99324db9389c95",
+    "bytes": 831399
+  }
+}

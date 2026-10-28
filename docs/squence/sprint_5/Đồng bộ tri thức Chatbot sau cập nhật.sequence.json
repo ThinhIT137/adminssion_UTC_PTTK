@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 5 · Đồng bộ tri thức Chatbot sau cập nhật",
+    "output": "docs/squence/sprint_5/Đồng bộ tri thức Chatbot sau cập nhật.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_ai_ml.git",
+      "revision": "3c487756b7f3ddb98e4729c8a2c903c8a5c4b8eb",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js admin",
+      "sublabel": "Thao tác tri thức",
+      "sources": [
+        {
+          "path": "src/services/chat_service.py",
+          "line": 28,
+          "end_line": 39
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 108,
+          "end_line": 138
+        },
+        {
+          "path": "src/repositories/chat_repository.py",
+          "line": 1,
+          "end_line": 181
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "AI service",
+      "sublabel": "Lưu rồi đồng bộ",
+      "sources": [
+        {
+          "path": "src/services/chat_service.py",
+          "line": 28,
+          "end_line": 39
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 108,
+          "end_line": 138
+        },
+        {
+          "path": "src/repositories/chat_repository.py",
+          "line": 1,
+          "end_line": 181
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/services/chat_service.py",
+          "line": 28,
+          "end_line": 39
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 108,
+          "end_line": 138
+        },
+        {
+          "path": "src/repositories/chat_repository.py",
+          "line": 1,
+          "end_line": 181
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "type": "backend",
+      "label": "RAG",
+      "sublabel": "Kho tri thức",
+      "sources": [
+        {
+          "path": "src/services/chat_service.py",
+          "line": 28,
+          "end_line": 39
+        },
+        {
+          "path": "src/services/chat_service.py",
+          "line": 108,
+          "end_line": 138
+        },
+        {
+          "path": "src/repositories/chat_repository.py",
+          "line": 1,
+          "end_line": 181
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Cập nhật tri thức",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Repository ghi nội dung",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Ghi thành công",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Đọc tri thức active",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "db",
+      "to": "api",
+      "label": "Tập nội dung",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "rag",
+      "label": "Reload dữ liệu",
+      "variant": "default",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "rag",
+      "to": "api",
+      "label": "Đồng bộ / ném lỗi",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "caller",
+      "label": "Response thao tác",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 5; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_ai_ml_latest @ 3c487756b7f3. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "P09: sync lỗi sau ghi có thể trả lỗi chung dù DB đã đổi; chưa có hợp đồng hai giai đoạn hoàn chỉnh."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_ai_ml_latest/src/services/chat_service.py:28–39",
+        "backend_admission/backend_ai_ml_latest/src/services/chat_service.py:108–138",
+        "backend_admission/backend_ai_ml_latest/src/repositories/chat_repository.py:1–181"
+      ]
+    }
+  ]
+}

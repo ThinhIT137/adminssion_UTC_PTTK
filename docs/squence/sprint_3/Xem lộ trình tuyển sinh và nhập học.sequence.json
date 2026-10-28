@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 3 · Xem lộ trình tuyển sinh và nhập học",
+    "output": "docs/squence/sprint_3/Xem lộ trình tuyển sinh và nhập học.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Người dùng",
+      "sublabel": "Giao diện trình duyệt",
+      "sources": [
+        {
+          "path": "app/(main)/lo-trinh-tuyen-sinh/page.tsx",
+          "line": 1,
+          "end_line": 20
+        },
+        {
+          "path": "services/lo_trinh_tuyen_sinh.service.ts",
+          "line": 1,
+          "end_line": 78
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js",
+      "sublabel": "Server Action / API",
+      "sources": [
+        {
+          "path": "app/(main)/lo-trinh-tuyen-sinh/page.tsx",
+          "line": 1,
+          "end_line": 20
+        },
+        {
+          "path": "services/lo_trinh_tuyen_sinh.service.ts",
+          "line": 1,
+          "end_line": 78
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "type": "backend",
+      "label": "Service",
+      "sublabel": "Xử lý nghiệp vụ",
+      "sources": [
+        {
+          "path": "app/(main)/lo-trinh-tuyen-sinh/page.tsx",
+          "line": 1,
+          "end_line": 20
+        },
+        {
+          "path": "services/lo_trinh_tuyen_sinh.service.ts",
+          "line": 1,
+          "end_line": 78
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "app/(main)/lo-trinh-tuyen-sinh/page.tsx",
+          "line": 1,
+          "end_line": 20
+        },
+        {
+          "path": "services/lo_trinh_tuyen_sinh.service.ts",
+          "line": 1,
+          "end_line": 78
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "web",
+      "to": "next",
+      "label": "Mở trang / đổi bộ lọc",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "next",
+      "to": "svc",
+      "label": "Chuẩn hóa tham số truy vấn",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "svc",
+      "to": "db",
+      "label": "Đọc các mốc đã cấu hình",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "svc",
+      "label": "Danh sách / lỗi",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "svc",
+      "to": "next",
+      "label": "Dữ liệu đã ánh xạ",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "next",
+      "to": "web",
+      "label": "Render kết quả / báo thiếu",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 3; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào frontend_admission @ f85d93835621. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Đọc DB ở server Next.js; không giả định mọi trang công khai phải gọi backend điểm."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "frontend_admission/app/(main)/lo-trinh-tuyen-sinh/page.tsx:1–20",
+        "frontend_admission/services/lo_trinh_tuyen_sinh.service.ts:1–78"
+      ]
+    }
+  ]
+}

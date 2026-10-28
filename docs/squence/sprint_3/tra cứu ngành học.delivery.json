@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a45e2a92-a593-489e-a4a7-39c09c329083",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.html",
+  "specification": {
+    "sha256": "5b0d893d66d77e3117a2664178081adea55f8ceaa4b73a2d323033da306d42ed",
+    "bytes": 4071
+  },
+  "artifact": {
+    "sha256": "4c0cd0e0c15341abc955cfee3c4a353609b6f485a8a46f459ded66fd649167a8",
+    "bytes": 830817
+  }
+}

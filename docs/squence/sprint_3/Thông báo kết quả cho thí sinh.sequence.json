@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 3 · Thông báo kết quả cho thí sinh",
+    "output": "docs/squence/sprint_3/Thông báo kết quả cho thí sinh.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Caller admin",
+      "sublabel": "API gửi riêng",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 263,
+          "end_line": 300
+        },
+        {
+          "path": "src/services/adapters/email_sender.py",
+          "line": 1,
+          "end_line": 59
+        },
+        {
+          "path": "src/services/notification_service.py",
+          "line": 1,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score workflow",
+      "sublabel": "Xử lý outbox",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 263,
+          "end_line": 300
+        },
+        {
+          "path": "src/services/adapters/email_sender.py",
+          "line": 1,
+          "end_line": 59
+        },
+        {
+          "path": "src/services/notification_service.py",
+          "line": 1,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 263,
+          "end_line": 300
+        },
+        {
+          "path": "src/services/adapters/email_sender.py",
+          "line": 1,
+          "end_line": 59
+        },
+        {
+          "path": "src/services/notification_service.py",
+          "line": 1,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "smtp",
+      "type": "external",
+      "label": "SMTP",
+      "sublabel": "Email được cấu hình",
+      "sources": [
+        {
+          "path": "src/router/workflow_router.py",
+          "line": 263,
+          "end_line": 300
+        },
+        {
+          "path": "src/services/adapters/email_sender.py",
+          "line": 1,
+          "end_line": 59
+        },
+        {
+          "path": "src/services/notification_service.py",
+          "line": 1,
+          "end_line": 62
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Yêu cầu gửi theo năm",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Claim job chưa gửi",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Job đã khóa",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Commit trạng thái sending",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "api",
+      "to": "smtp",
+      "label": "Có email: gửi thông báo",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "smtp",
+      "to": "api",
+      "label": "SMTP chấp nhận / lỗi",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "api",
+      "to": "db",
+      "label": "Ghi sent / failed / thiếu email",
+      "variant": "default",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "db",
+      "to": "api",
+      "label": "Lưu trạng thái",
+      "variant": "return",
+      "y": 576
+    },
+    {
+      "id": "message-9",
+      "from": "api",
+      "to": "caller",
+      "label": "Số lượng xử lý và đã gửi",
+      "variant": "return",
+      "y": 634
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 3; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "SMTP thiếu cấu hình: dừng trước claim. Không có email: bỏ qua SMTP và ghi missing_email.",
+        "Không vẽ worker tự chạy: chưa thấy lịch chạy tự động. P08: job sending có nguy cơ kẹt khi process chết."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/workflow_router.py:263–300",
+        "backend_admission/backend_application_score/src/services/adapters/email_sender.py:1–59",
+        "backend_admission/backend_application_score/src/services/notification_service.py:1–62"
+      ]
+    }
+  ]
+}

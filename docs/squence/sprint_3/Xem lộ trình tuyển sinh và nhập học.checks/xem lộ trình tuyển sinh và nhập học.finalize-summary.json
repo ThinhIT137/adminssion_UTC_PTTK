@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.sequence.json",
+    "sha256": "97b5cd5edf28a9c34d9e4e44e64b8e423bbfd3bb473cdbb1bc1a28b462c8039c",
+    "bytes": 4107
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.html",
+    "sha256": "b27970d1bad2964c2ecb2ad4349762e70dc9e0034ffb8050712c24cf3346e887",
+    "bytes": 830881
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "fail",
+    "browser-check": "not-run"
+  },
+  "failedStage": "check",
+  "diagnostics": [
+    {
+      "code": "delivery/provenance-locked",
+      "severity": "error",
+      "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+      "subject": {
+        "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json",
+        "found": true
+      },
+      "supportedFixes": [
+        "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.checks\\xem lộ trình tuyển sinh và nhập học.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.checks\\xem lộ trình tuyển sinh và nhập học.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1705,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  }
+}

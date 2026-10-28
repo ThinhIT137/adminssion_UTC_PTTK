@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 6 · Công bố kết quả chính thức",
+    "output": "docs/squence/sprint_6/Công bố kết quả chính thức.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Admin",
+      "sublabel": "Chọn mùa / chương trình",
+      "sources": [
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 140,
+          "end_line": 190
+        },
+        {
+          "path": "src/models/workflow.py",
+          "line": 1,
+          "end_line": 24
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "HoSo service",
+      "sublabel": "Công bố",
+      "sources": [
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 140,
+          "end_line": 190
+        },
+        {
+          "path": "src/models/workflow.py",
+          "line": 1,
+          "end_line": 24
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 140,
+          "end_line": 190
+        },
+        {
+          "path": "src/models/workflow.py",
+          "line": 1,
+          "end_line": 24
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Yêu cầu công bố",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Đọc mốc và hồ sơ theo phạm vi",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Lịch + danh sách",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "db",
+      "label": "Nếu đủ căn cứ: ghi cong_bo_at",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "api",
+      "to": "db",
+      "label": "Tạo NotificationOutbox pending",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "db",
+      "to": "api",
+      "label": "Kết quả cùng transaction",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "api",
+      "to": "caller",
+      "label": "Đã công bố / lỗi điều kiện",
+      "variant": "return",
+      "y": 518
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 6; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Không đủ mốc/chưa chốt: dừng trước ghi. Lặp công bố không tạo outbox trùng.",
+        "P02: bộ seed local có tên mốc tra cứu không khớp nhận diện công bố; cần đối chiếu dữ liệu thật. Email chưa tự gửi ở bước này."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/services/ho_so_service.py:140–190",
+        "backend_admission/backend_application_score/src/models/workflow.py:1–24",
+        "backend_admission/backend_application_score/src/core/database.py:1–43"
+      ]
+    }
+  ]
+}

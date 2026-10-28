@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "cd582a55-c6fc-47cb-bc63-ff355277a2a4",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.html",
+  "specification": {
+    "sha256": "225262ec26426a17d7b4762b37a39448ed1d4ef95a3ba6565202366461868951",
+    "bytes": 4661
+  },
+  "artifact": {
+    "sha256": "077df3a7bcd2c9a5671b91886b0ea0d3bcfd94094c6224455814934413fed050",
+    "bytes": 831026
+  }
+}

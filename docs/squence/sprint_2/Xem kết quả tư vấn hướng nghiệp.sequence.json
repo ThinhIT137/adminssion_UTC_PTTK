@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 2 · Xem kết quả tư vấn hướng nghiệp",
+    "output": "docs/squence/sprint_2/Xem kết quả tư vấn hướng nghiệp.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_ai_ml.git",
+      "revision": "3c487756b7f3ddb98e4729c8a2c903c8a5c4b8eb",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js",
+      "sublabel": "Mã kết quả MBTI",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 41,
+          "end_line": 58
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 72,
+          "end_line": 84
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 97,
+          "end_line": 204
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "AI service",
+      "sublabel": "GET result",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 41,
+          "end_line": 58
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 72,
+          "end_line": 84
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 97,
+          "end_line": 204
+        }
+      ]
+    },
+    {
+      "id": "repo",
+      "type": "backend",
+      "label": "Repository",
+      "sublabel": "Báo cáo đã lưu",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 41,
+          "end_line": 58
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 72,
+          "end_line": 84
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 97,
+          "end_line": 204
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 41,
+          "end_line": 58
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 72,
+          "end_line": 84
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 97,
+          "end_line": 204
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "GET kết quả theo ID",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "repo",
+      "label": "Tìm báo cáo",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "repo",
+      "to": "db",
+      "label": "SELECT ket_qua_trac_nghiem",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "repo",
+      "label": "Payload / không có",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "repo",
+      "to": "api",
+      "label": "Báo cáo đã chuẩn hóa",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Nội dung tư vấn / 404",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 2; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_ai_ml_latest @ 3c487756b7f3. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "P10: chưa thấy kiểm tra chủ sở hữu ở router này. Không vẽ bước xác thực tưởng tượng."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_ai_ml_latest/src/router/mbti_router.py:41–58",
+        "backend_admission/backend_ai_ml_latest/src/services/mbti_service.py:72–84",
+        "backend_admission/backend_ai_ml_latest/src/repositories/mbti_repository.py:97–204"
+      ]
+    }
+  ]
+}

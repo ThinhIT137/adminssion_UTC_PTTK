@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9c64a561-c7a9-4d00-b3cc-2d25d7b6e2c1",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.html",
+  "specification": {
+    "sha256": "7164b53b85a9d089f411368640c512f6d0dc1fcc8d3716fef0876a4bbf416580",
+    "bytes": 3874
+  },
+  "artifact": {
+    "sha256": "96155058863e94285239de2e07d8eb8527f10d28ccdb40b454035c94e6764313",
+    "bytes": 832411
+  }
+}

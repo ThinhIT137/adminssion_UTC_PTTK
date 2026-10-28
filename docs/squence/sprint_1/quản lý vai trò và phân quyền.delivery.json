@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "89d14261-4386-470b-8e54-86fba1874ef9",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html",
+  "specification": {
+    "sha256": "a574e642a5806c0581fd43bdeb33c96576b729c48edd9d74557820d2630d8190",
+    "bytes": 3912
+  },
+  "artifact": {
+    "sha256": "8afd29fbcc7d407da29211e2e6364465bc1e5cce97e924a52f5d3353e78f183f",
+    "bytes": 832462
+  }
+}

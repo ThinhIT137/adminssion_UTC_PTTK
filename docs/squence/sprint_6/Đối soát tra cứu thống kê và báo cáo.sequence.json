@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 6 · Đối soát tra cứu thống kê và báo cáo",
+    "output": "docs/squence/sprint_6/Đối soát tra cứu thống kê và báo cáo.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Caller có quyền",
+      "sublabel": "Thí sinh / admin",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "API tương ứng",
+      "sublabel": "Ba lượt đọc riêng",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        }
+      ]
+    },
+    {
+      "id": "rule",
+      "type": "backend",
+      "label": "Result rule",
+      "sublabel": "published / result_label",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/thong_ke_service.py",
+          "line": 1,
+          "end_line": 338
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Tra cứu hoặc thống kê / báo cáo",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Đọc cùng năm và phạm vi",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Hồ sơ và cong_bo_at",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "rule",
+      "label": "Phân loại kết quả đã công bố",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "rule",
+      "to": "api",
+      "label": "Nhãn kết quả thống nhất",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Response theo quyền caller",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 6; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Không phải một endpoint cấp cả thống kê cho thí sinh. Mỗi API giữ quyền riêng, dùng chung quy tắc phân loại.",
+        "Sơ đồ logic không chứng minh số liệu thực tế đã đối soát hoặc test xuyên luồng đã đạt."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/services/result_state.py:1–15",
+        "backend_admission/backend_application_score/src/services/ho_so_service.py:1–357",
+        "backend_admission/backend_application_score/src/services/thong_ke_service.py:1–338"
+      ]
+    }
+  ]
+}

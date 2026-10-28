@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b6762ea4-b5ae-4d72-aa78-8170215d49d8",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.html",
+  "specification": {
+    "sha256": "a4be973aeefc3ec2c3fe8808660f519afa4c2a0e1075be0ba17d0ba92a74ec73",
+    "bytes": 3933
+  },
+  "artifact": {
+    "sha256": "73b269ff67c9939f2618eb3de8c43348146c1543ef7f7791d44d38466f441034",
+    "bytes": 832497
+  }
+}

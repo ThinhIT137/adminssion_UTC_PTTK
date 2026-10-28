@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d7cd8c7b-88b7-4161-8fe9-21f650e5f123",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+  "specification": {
+    "sha256": "3273a595a51b6a59cdde0b4fd851e17c65b9f5c39557f25369f0e718b25c0d38",
+    "bytes": 5169
+  },
+  "artifact": {
+    "sha256": "5f3e36a294437bc1d7b3939b856565edaa551719fad9290cd700629a8267dc7f",
+    "bytes": 833143
+  }
+}

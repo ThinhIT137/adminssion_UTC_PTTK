@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Quản trị ngành học",
+    "output": "docs/squence/sprint_1/Quản trị ngành học.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Người dùng",
+      "sublabel": "Giao diện trình duyệt",
+      "sources": [
+        {
+          "path": "services/nganh_hoc.service.ts",
+          "line": 1,
+          "end_line": 135
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js",
+      "sublabel": "Server Action / API",
+      "sources": [
+        {
+          "path": "services/nganh_hoc.service.ts",
+          "line": 1,
+          "end_line": 135
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "type": "backend",
+      "label": "Service",
+      "sublabel": "Xử lý nghiệp vụ",
+      "sources": [
+        {
+          "path": "services/nganh_hoc.service.ts",
+          "line": 1,
+          "end_line": 135
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "services/nganh_hoc.service.ts",
+          "line": 1,
+          "end_line": 135
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "web",
+      "to": "next",
+      "label": "CRUD ngành học",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "next",
+      "to": "db",
+      "label": "Đọc danh tính quản trị",
+      "variant": "security",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "next",
+      "label": "Tài khoản và vai trò",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "next",
+      "to": "svc",
+      "label": "Gọi service được phép",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "svc",
+      "to": "db",
+      "label": "Đọc / ghi nganh_hoc",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "db",
+      "to": "svc",
+      "label": "Kết quả hoặc lỗi ràng buộc",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "svc",
+      "to": "next",
+      "label": "Trả kết quả xử lý",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "next",
+      "to": "web",
+      "label": "Làm mới danh sách / báo lỗi",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào frontend_admission @ f85d93835621. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Sơ đồ CRUD tóm lược các thao tác đọc/thêm/sửa/xóa; mỗi thao tác là một lần gọi riêng."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "frontend_admission/services/nganh_hoc.service.ts:1–135"
+      ]
+    }
+  ]
+}

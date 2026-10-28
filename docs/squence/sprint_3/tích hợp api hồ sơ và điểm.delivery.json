@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "bf8399d2-d3a9-42b7-9ef1-d7f9324cc722",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.html",
+  "specification": {
+    "sha256": "dcb117cc4f249f1b8cf22e8cd309aa9e06930e90adb4f5daa1e7fd6f0acefedc",
+    "bytes": 3393
+  },
+  "artifact": {
+    "sha256": "cc664c4651b484221e3e356b1ad0dbf737e433ce114cc65a3148d4bc295c636b",
+    "bytes": 827949
+  }
+}

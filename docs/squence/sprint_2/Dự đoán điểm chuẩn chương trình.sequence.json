@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 2 · Dự đoán điểm chuẩn chương trình",
+    "output": "docs/squence/sprint_2/Dự đoán điểm chuẩn chương trình.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_ai_ml.git",
+      "revision": "3c487756b7f3ddb98e4729c8a2c903c8a5c4b8eb",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js",
+      "sublabel": "Bảng dự báo",
+      "sources": [
+        {
+          "path": "src/router/prediction_router.py",
+          "line": 16,
+          "end_line": 33
+        },
+        {
+          "path": "src/services/prediction_service.py",
+          "line": 24,
+          "end_line": 75
+        },
+        {
+          "path": "src/repositories/prediction_repository.py",
+          "line": 1,
+          "end_line": 85
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Prediction API",
+      "sublabel": "Mùa 2026",
+      "sources": [
+        {
+          "path": "src/router/prediction_router.py",
+          "line": 16,
+          "end_line": 33
+        },
+        {
+          "path": "src/services/prediction_service.py",
+          "line": 24,
+          "end_line": 75
+        },
+        {
+          "path": "src/repositories/prediction_repository.py",
+          "line": 1,
+          "end_line": 85
+        }
+      ]
+    },
+    {
+      "id": "repo",
+      "type": "backend",
+      "label": "Repository",
+      "sublabel": "DB / fallback",
+      "sources": [
+        {
+          "path": "src/router/prediction_router.py",
+          "line": 16,
+          "end_line": 33
+        },
+        {
+          "path": "src/services/prediction_service.py",
+          "line": 24,
+          "end_line": 75
+        },
+        {
+          "path": "src/repositories/prediction_repository.py",
+          "line": 1,
+          "end_line": 85
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/prediction_router.py",
+          "line": 16,
+          "end_line": 33
+        },
+        {
+          "path": "src/services/prediction_service.py",
+          "line": 24,
+          "end_line": 75
+        },
+        {
+          "path": "src/repositories/prediction_repository.py",
+          "line": 1,
+          "end_line": 85
+        }
+      ]
+    },
+    {
+      "id": "asset",
+      "type": "database",
+      "label": "Asset JSON",
+      "sublabel": "Anchor 2025–2026",
+      "sources": [
+        {
+          "path": "src/router/prediction_router.py",
+          "line": 16,
+          "end_line": 33
+        },
+        {
+          "path": "src/services/prediction_service.py",
+          "line": 24,
+          "end_line": 75
+        },
+        {
+          "path": "src/repositories/prediction_repository.py",
+          "line": 1,
+          "end_line": 85
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "GET all-benchmarks",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "repo",
+      "label": "Đọc dự đoán 2026",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "repo",
+      "to": "db",
+      "label": "SELECT dự đoán + lịch sử",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "repo",
+      "label": "Dữ liệu / rỗng / lỗi",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "repo",
+      "to": "asset",
+      "label": "Chỉ khi thiếu DB: đọc anchor",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "asset",
+      "to": "repo",
+      "label": "Dữ liệu fallback",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "repo",
+      "to": "api",
+      "label": "Danh sách đã ghép",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "caller",
+      "label": "Điểm và khoảng dự báo",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 2; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_ai_ml_latest @ 3c487756b7f3. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Nhánh asset chỉ chạy khi thiếu dữ liệu DB. Fallback trong repo có thể dùng điểm cũ làm diem_du_doan; không khẳng định mọi kết quả là suy luận model mới.",
+        "Hợp đồng đang gắn năm 2026, không tự đổi thành năm 2027."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_ai_ml_latest/src/router/prediction_router.py:16–33",
+        "backend_admission/backend_ai_ml_latest/src/services/prediction_service.py:24–75",
+        "backend_admission/backend_ai_ml_latest/src/repositories/prediction_repository.py:1–85"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "startedAt": "2026-10-25T12:55:20.211Z",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.sequence.json",
+    "sha256": "9f29fcc819356070009fcabc23ac9147247d3d2e932904c1d3a8b0909350d80f",
+    "bytes": 2729
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html"
+  },
+  "stages": {
+    "validate": {
+      "status": "not-run",
+      "execution": "embedded-in-deliver"
+    },
+    "deliver": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 182,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\frontend_admission",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "deliver",
+        "receiptId": "21b8e33b-7f76-40e3-b588-8c4e5ebc8fd6",
+        "stage": "prepare",
+        "type": "sequence",
+        "input": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.sequence.json",
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html",
+        "error": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json\".",
+        "diagnostics": [
+          {
+            "code": "delivery/concurrent-attempt",
+            "severity": "error",
+            "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json\".",
+            "subject": {
+              "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html",
+              "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json"
+            },
+            "evidence": {
+              "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json\"."
+            },
+            "supportedFixes": [
+              "wait for the active delivery to finish, then retry"
+            ]
+          }
+        ],
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "delivery/concurrent-attempt",
+      "severity": "error",
+      "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json\".",
+      "subject": {
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_4\\.archify-delivery-lock.json\"."
+      },
+      "supportedFixes": [
+        "wait for the active delivery to finish, then retry"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.checks\\in và lưu báo cáo pdf.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.checks\\in và lưu báo cáo pdf.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "deliver",
+  "finishedAt": "2026-10-25T12:55:20.717Z",
+  "durationMs": 505,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

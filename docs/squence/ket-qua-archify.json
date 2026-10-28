@@ -1,0 +1,4020 @@
+[
+  {
+    "title": "Hỏi đáp AI Chatbot",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Hỏi đáp AI Chatbot.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.sequence.json",
+        "sha256": "225262ec26426a17d7b4762b37a39448ed1d4ef95a3ba6565202366461868951",
+        "bytes": 4661
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.html",
+        "sha256": "077df3a7bcd2c9a5671b91886b0ea0d3bcfd94094c6224455814934413fed050",
+        "bytes": 831026
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.checks\\hỏi đáp ai chatbot.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.checks\\hỏi đáp ai chatbot.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hỏi đáp AI Chatbot.checks\\hỏi đáp ai chatbot.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4494,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Dự đoán điểm chuẩn chương trình",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Dự đoán điểm chuẩn chương trình.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.sequence.json",
+        "sha256": "47e01e4368b8aa33cc12983b3b4e27dd5b9d551602e10bda7610ce2016847a5b",
+        "bytes": 5720
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.html",
+        "sha256": "e55f3d70d40466ad3d2c7ce4beb844fa7a7e914165f2233c841c50a4cd144c9a",
+        "bytes": 833708
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.checks\\dự đoán điểm chuẩn chương trình.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.checks\\dự đoán điểm chuẩn chương trình.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.checks\\dự đoán điểm chuẩn chương trình.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4131,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Thông báo kết quả cho thí sinh",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Thông báo kết quả cho thí sinh.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.sequence.json",
+        "sha256": "afef30ebaac2a9ea5b5e3e82ff5d08ced5caff0f17f825b536b9909efe9bbf72",
+        "bytes": 5337
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.html",
+        "sha256": "2831c113841f377903de6ffcd25a20b761434f2b7a135812d7d70c4ef6432905",
+        "bytes": 834046
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.checks\\thông báo kết quả cho thí sinh.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.checks\\thông báo kết quả cho thí sinh.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Thông báo kết quả cho thí sinh.checks\\thông báo kết quả cho thí sinh.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4787,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Xuất báo cáo CSV",
+    "sprint": 4,
+    "output": "docs/squence/sprint_4/Xuất báo cáo CSV.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.sequence.json",
+        "sha256": "c6e2fd4257bbd64d758afe4f477d686d3f7fcf51e7dce1e2a0336dc8a8abf676",
+        "bytes": 2770
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.html",
+        "sha256": "be9e21b098e4514ed20d435559d2c78387dc228ad43b6d6d72ff7150a672e419",
+        "bytes": 826680
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.checks\\xuất báo cáo csv.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.checks\\xuất báo cáo csv.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.checks\\xuất báo cáo csv.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4026,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Đồng bộ tri thức Chatbot sau cập nhật",
+    "sprint": 5,
+    "output": "docs/squence/sprint_5/Đồng bộ tri thức Chatbot sau cập nhật.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.sequence.json",
+        "sha256": "0a9af71e66f5532ca7657bcd38df6c702c617a551de27006d73599d7f563ce1d",
+        "bytes": 4953
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.html",
+        "sha256": "f522ceb6eec72806e1ecc89d7b92f6f6a488f2f84e2d2f9dbb2047a6104ecbd2",
+        "bytes": 833007
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.checks\\đồng bộ tri thức chatbot sau cập nhật.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.checks\\đồng bộ tri thức chatbot sau cập nhật.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.checks\\đồng bộ tri thức chatbot sau cập nhật.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 3944,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Đối soát tra cứu thống kê và báo cáo",
+    "sprint": 6,
+    "output": "docs/squence/sprint_6/Đối soát tra cứu thống kê và báo cáo.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.sequence.json",
+        "sha256": "e4bdd3816d4b82bf915f04b46f35b5b7b7ee07aa8fdf7ab1066227170f9775a9",
+        "bytes": 4878
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.html",
+        "sha256": "e5887f43e3fadd65d329072a49b39674c7028ed9e6c0ec76a5b0722c1996aeba",
+        "bytes": 831459
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.checks\\đối soát tra cứu thống kê và báo cáo.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.checks\\đối soát tra cứu thống kê và báo cáo.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.checks\\đối soát tra cứu thống kê và báo cáo.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4167,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý tổ hợp xét tuyển",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Quản lý tổ hợp xét tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý tổ hợp xét tuyển.sequence.json",
+        "sha256": "b97c40189e5daba7c516d341517bff5c8e6d713d68058ba315c85839171f7006",
+        "bytes": 3821
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý tổ hợp xét tuyển.html",
+        "sha256": "c94f7b22015674c55f9096b5f23352edea8df21eb69e6824350823f40b510bf1",
+        "bytes": 832346
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý tổ hợp xét tuyển.checks-2\\quản lý tổ hợp xét tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý tổ hợp xét tuyển.checks-2\\quản lý tổ hợp xét tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý tổ hợp xét tuyển.checks-2\\quản lý tổ hợp xét tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4748,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Hiển thị giao diện và bố cục thí sinh",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Hiển thị giao diện và bố cục thí sinh.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.sequence.json",
+        "sha256": "b29199a0e530c351c72e18f05f6d0638a860d7f1cd538995a5451914ff0d4da4",
+        "bytes": 2864
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.html",
+        "sha256": "d93b7d241c1c4bdb256a01c04d2d15826db508e3d2216eeb2a77c934c2e58660",
+        "bytes": 827302
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.checks-2\\hiển thị giao diện và bố cục thí sinh.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.checks-2\\hiển thị giao diện và bố cục thí sinh.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.checks-2\\hiển thị giao diện và bố cục thí sinh.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4805,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Xem thông tin tuyển sinh",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Xem thông tin tuyển sinh.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.sequence.json",
+        "sha256": "490bbe6854195007160c960f9fb412bb0e5152f9438c0b033ab56f199c2cbed3",
+        "bytes": 4085
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.html",
+        "sha256": "14e716b89280482c0a25ab634561c58be4deddab23f0c3e69a43fbcef43feb0f",
+        "bytes": 830840
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.checks-2\\xem thông tin tuyển sinh.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.checks-2\\xem thông tin tuyển sinh.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem thông tin tuyển sinh.checks-2\\xem thông tin tuyển sinh.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4915,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Hiển thị giao diện quản trị",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Hiển thị giao diện quản trị.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.sequence.json",
+        "sha256": "c494dd5a3e3a2f37a463d05ce8602dca0f47f65d69312c19cc74b64827853e72",
+        "bytes": 3263
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.html",
+        "sha256": "aefbd81a4a7ae53ee6938cffcd9edb38e6233379b8f5fe1e6c6cc22f505a3cba",
+        "bytes": 827772
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.checks-2\\hiển thị giao diện quản trị.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.checks-2\\hiển thị giao diện quản trị.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.checks-2\\hiển thị giao diện quản trị.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4079,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý tin tức quy chế và hướng dẫn",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Quản lý tin tức quy chế và hướng dẫn.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.sequence.json",
+        "sha256": "bac8b781494c00be4ef7440646eb46bccf290a77671f3f33807d5858bf877256",
+        "bytes": 3915
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.html",
+        "sha256": "37921ad1561f64d8c86e78f44deb97403249f7f602e5963181e2c5aeae64f60b",
+        "bytes": 832483
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.checks-2\\quản lý tin tức quy chế và hướng dẫn.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.checks-2\\quản lý tin tức quy chế và hướng dẫn.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.checks-2\\quản lý tin tức quy chế và hướng dẫn.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4601,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý phương thức xét tuyển",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Quản lý phương thức xét tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.sequence.json",
+        "sha256": "f3cc602ea494dd36038f792f96ba5564c518447ae3b977f3108f80336d10243d",
+        "bytes": 3866
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.html",
+        "sha256": "de2a8b9374086a377b31bad94841f78cb873ff2c83ef817585a4e68637284728",
+        "bytes": 832407
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.checks-2\\quản lý phương thức xét tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.checks-2\\quản lý phương thức xét tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.checks-2\\quản lý phương thức xét tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4832,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Đăng nhập quản trị",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Đăng nhập quản trị.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Đăng nhập quản trị.sequence.json",
+        "sha256": "9849561c4d4953eb61e6fd7bc3595ee9759f5ca40d784e302a465423ee0beeae",
+        "bytes": 4434
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Đăng nhập quản trị.html",
+        "sha256": "9098265b5f1009b2e0d41a9d3208d95b9968793dd30ae1ee44216d86336b0c53",
+        "bytes": 831431
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Đăng nhập quản trị.checks-2\\đăng nhập quản trị.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Đăng nhập quản trị.checks-2\\đăng nhập quản trị.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Đăng nhập quản trị.checks-2\\đăng nhập quản trị.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4532,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý mốc thời gian tuyển sinh",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Quản lý mốc thời gian tuyển sinh.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.sequence.json",
+        "sha256": "a4be973aeefc3ec2c3fe8808660f519afa4c2a0e1075be0ba17d0ba92a74ec73",
+        "bytes": 3933
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.html",
+        "sha256": "73b269ff67c9939f2618eb3de8c43348146c1543ef7f7791d44d38466f441034",
+        "bytes": 832497
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.checks-2\\quản lý mốc thời gian tuyển sinh.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.checks-2\\quản lý mốc thời gian tuyển sinh.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý mốc thời gian tuyển sinh.checks-2\\quản lý mốc thời gian tuyển sinh.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4505,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Xem lộ trình tuyển sinh và nhập học",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Xem lộ trình tuyển sinh và nhập học.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.sequence.json",
+        "sha256": "97b5cd5edf28a9c34d9e4e44e64b8e423bbfd3bb473cdbb1bc1a28b462c8039c",
+        "bytes": 4107
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.html",
+        "sha256": "b27970d1bad2964c2ecb2ad4349762e70dc9e0034ffb8050712c24cf3346e887",
+        "bytes": 830881
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.checks-2\\xem lộ trình tuyển sinh và nhập học.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.checks-2\\xem lộ trình tuyển sinh và nhập học.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Xem lộ trình tuyển sinh và nhập học.checks-2\\xem lộ trình tuyển sinh và nhập học.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4628,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý tài khoản quản trị",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Quản lý tài khoản quản trị.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.sequence.json",
+        "sha256": "7164b53b85a9d089f411368640c512f6d0dc1fcc8d3716fef0876a4bbf416580",
+        "bytes": 3874
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.html",
+        "sha256": "96155058863e94285239de2e07d8eb8527f10d28ccdb40b454035c94e6764313",
+        "bytes": 832411
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.checks-2\\quản lý tài khoản quản trị.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.checks-2\\quản lý tài khoản quản trị.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tài khoản quản trị.checks-2\\quản lý tài khoản quản trị.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4536,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Thiết lập chỉ tiêu tuyển sinh đầu mùa",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Thiết lập chỉ tiêu tuyển sinh đầu mùa.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.sequence.json",
+        "sha256": "07a33e4085e7b4e96e8e708b65d668572b50c44c192448ca6fe4686b48fb9812",
+        "bytes": 3897
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.html",
+        "sha256": "c5ba145048be0dcf85b7f07ae1b520e21e70c11346850a1382ce67ac24ad7aa3",
+        "bytes": 831938
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.checks-2\\thiết lập chỉ tiêu tuyển sinh đầu mùa.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.checks-2\\thiết lập chỉ tiêu tuyển sinh đầu mùa.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.checks-2\\thiết lập chỉ tiêu tuyển sinh đầu mùa.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4655,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý vai trò và phân quyền",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Quản lý vai trò và phân quyền.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.sequence.json",
+        "sha256": "a574e642a5806c0581fd43bdeb33c96576b729c48edd9d74557820d2630d8190",
+        "bytes": 3912
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.html",
+        "sha256": "8afd29fbcc7d407da29211e2e6364465bc1e5cce97e924a52f5d3353e78f183f",
+        "bytes": 832462
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.checks-2\\quản lý vai trò và phân quyền.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.checks-2\\quản lý vai trò và phân quyền.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý vai trò và phân quyền.checks-2\\quản lý vai trò và phân quyền.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4709,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Duyệt xử lý hồ sơ thí sinh",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Duyệt xử lý hồ sơ thí sinh.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.sequence.json",
+        "sha256": "b3ca13d9e7155e8feecdbc3600294d882d24e04832db1999b9dc9c40c79af0ee",
+        "bytes": 4877
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.html",
+        "sha256": "f11f1db112d83551601fd28221c2709ad4a0ec8420b1f47d6420eefc34d8697c",
+        "bytes": 832860
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.checks-2\\duyệt xử lý hồ sơ thí sinh.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.checks-2\\duyệt xử lý hồ sơ thí sinh.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Duyệt xử lý hồ sơ thí sinh.checks-2\\duyệt xử lý hồ sơ thí sinh.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4854,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tra cứu chương trình đào tạo",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Tra cứu chương trình đào tạo.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.sequence.json",
+        "sha256": "8cd3c1ef208311e80fd2979e3b783f5aa83f6d371b6c7452e2bf15fe153af9de",
+        "bytes": 4099
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.html",
+        "sha256": "5c4fd5a3519723cb5f4544062c3b34b36a044821ab8ea54dd0f857f4b3744abc",
+        "bytes": 830860
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.checks-2\\tra cứu chương trình đào tạo.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.checks-2\\tra cứu chương trình đào tạo.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.checks-2\\tra cứu chương trình đào tạo.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5163,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản trị ngành học",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Quản trị ngành học.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị ngành học.sequence.json",
+        "sha256": "81750d09ac94f6ca83130405110bda340ff14a94999a540d93a32032b508cffa",
+        "bytes": 3768
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị ngành học.html",
+        "sha256": "a976ce36cbb6b2c1f460bb7c55a6599941930b8c0a4d366b4c1067437d273384",
+        "bytes": 832305
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị ngành học.checks-2\\quản trị ngành học.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị ngành học.checks-2\\quản trị ngành học.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị ngành học.checks-2\\quản trị ngành học.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4533,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Cập nhật trạng thái xét tuyển",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Cập nhật trạng thái xét tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.sequence.json",
+        "sha256": "db8dd830aaee065437a9807fcf22fbe04222f3f61bbb6b8a80225d6c54831e21",
+        "bytes": 3672
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.html",
+        "sha256": "564f54f5976a6fdfeacf36b6efff04ab1abaf74b7f018e42b4302fe060faff44",
+        "bytes": 829165
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.checks-2\\cập nhật trạng thái xét tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.checks-2\\cập nhật trạng thái xét tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.checks-2\\cập nhật trạng thái xét tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4473,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tích hợp API hồ sơ và điểm",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Tích hợp API hồ sơ và điểm.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.sequence.json",
+        "sha256": "dcb117cc4f249f1b8cf22e8cd309aa9e06930e90adb4f5daa1e7fd6f0acefedc",
+        "bytes": 3393
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.html",
+        "sha256": "cc664c4651b484221e3e356b1ad0dbf737e433ce114cc65a3148d4bc295c636b",
+        "bytes": 827949
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.checks-2\\tích hợp api hồ sơ và điểm.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.checks-2\\tích hợp api hồ sơ và điểm.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API hồ sơ và điểm.checks-2\\tích hợp api hồ sơ và điểm.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4447,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản trị chương trình đào tạo",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Quản trị chương trình đào tạo.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.sequence.json",
+        "sha256": "58825a418b53d391ac484928ad8c2af2d24c9e155a5e7912ed3bcffc1f49637e",
+        "bytes": 3867
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html",
+        "sha256": "5e7fa5d9d8a84a9e7cc94b4f2e32b19859a5603daf47ecfa4f2f78b9bd4a5528",
+        "bytes": 832418
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.checks-2\\quản trị chương trình đào tạo.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.checks-2\\quản trị chương trình đào tạo.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.checks-2\\quản trị chương trình đào tạo.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4892,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Đồng bộ điểm thi THPT",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Đồng bộ điểm thi THPT.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.sequence.json",
+        "sha256": "9089c9d88e0ee05ed331c2dc69e2e1b96e4a849b7f28d3382617799a529584af",
+        "bytes": 5016
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.html",
+        "sha256": "6f914b66265f8e6941123027a17a5e8b6bbfa543ee2dfe7a81b5da3efd275432",
+        "bytes": 833120
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.checks-2\\đồng bộ điểm thi thpt.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.checks-2\\đồng bộ điểm thi thpt.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Đồng bộ điểm thi THPT.checks-2\\đồng bộ điểm thi thpt.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4998,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tích hợp API MBTI và Chatbot",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Tích hợp API MBTI và Chatbot.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.sequence.json",
+        "sha256": "8624191d4509d2df856386d7976de87f998df0696cd9c5d0ccd39d4c7c45a700",
+        "bytes": 3866
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.html",
+        "sha256": "4ff5f5a366f5a9a2d13e2c1b166e11d04fb1f83de6a039604cfa5be14fe9693e",
+        "bytes": 827835
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.checks-2\\tích hợp api mbti và chatbot.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.checks-2\\tích hợp api mbti và chatbot.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.checks-2\\tích hợp api mbti và chatbot.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5113,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý dữ liệu điểm chuẩn các năm",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Quản lý dữ liệu điểm chuẩn các năm.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.sequence.json",
+        "sha256": "0d6156e716c878dc088d49156ff6dbcfecdd3344db5e7835062d1f3d8fc5fb3b",
+        "bytes": 4963
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.html",
+        "sha256": "10bbc261f5b58a63a8dfb43bca113094313674b3c2eeb648c7103852dcb90b9d",
+        "bytes": 832929
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.checks-2\\quản lý dữ liệu điểm chuẩn các năm.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.checks-2\\quản lý dữ liệu điểm chuẩn các năm.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.checks-2\\quản lý dữ liệu điểm chuẩn các năm.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5012,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Nộp và xác minh điểm ĐGNL",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Nộp và xác minh điểm ĐGNL.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.sequence.json",
+        "sha256": "b6691765b31c304b20926c548a8c6ac4f942e39ad31d0f84a859863f007f0d75",
+        "bytes": 5723
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "sha256": "4bfde2307b3105f2f27321778cdae718f148c68a3865511b2b2cbab3f9061d7d",
+        "bytes": 836416
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.checks-2\\nộp và xác minh điểm đgnl.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.checks-2\\nộp và xác minh điểm đgnl.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.checks-2\\nộp và xác minh điểm đgnl.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4744,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tra cứu kết quả trúng tuyển",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Tra cứu kết quả trúng tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.sequence.json",
+        "sha256": "b481d700d734bf18c3c7766cef337fb024d0dcd2955e1cf4e695db27a8a99757",
+        "bytes": 3803
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html",
+        "sha256": "1885390fc3a605c68403dfa9c3d0d5abd4d5df1a7ad01efb24b9de8eb6eb4fc6",
+        "bytes": 828038
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.checks-2\\tra cứu kết quả trúng tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.checks-2\\tra cứu kết quả trúng tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.checks-2\\tra cứu kết quả trúng tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4373,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tính điểm quy đổi",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Tính điểm quy đổi.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.sequence.json",
+        "sha256": "cdbb87cf0d6e33b75ade5253bba196dea4f9a66e3a1d70d2853a060fec8ff145",
+        "bytes": 4801
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.html",
+        "sha256": "60df348bcb998905c965d1587362f406088e1ffe37db539b15f24f03e3a8eb31",
+        "bytes": 831365
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.checks-2\\tính điểm quy đổi.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.checks-2\\tính điểm quy đổi.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tính điểm quy đổi.checks-2\\tính điểm quy đổi.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4813,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Thống kê tổng quan hồ sơ",
+    "sprint": 4,
+    "output": "docs/squence/sprint_4/Thống kê tổng quan hồ sơ.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.sequence.json",
+        "sha256": "4cdcb472d6637482daac3752e75674ecf6807b743cc2c884940b0d37944faafe",
+        "bytes": 4833
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.html",
+        "sha256": "adbcef6f682aa197a823974c1c2b077697dfd79fa05c7ffb296d7ca6d29040ce",
+        "bytes": 831552
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.checks-2\\thống kê tổng quan hồ sơ.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.checks-2\\thống kê tổng quan hồ sơ.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.checks-2\\thống kê tổng quan hồ sơ.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5179,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Xem kết quả tư vấn hướng nghiệp",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Xem kết quả tư vấn hướng nghiệp.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.sequence.json",
+        "sha256": "c8617dc564fa506659632349a4c16e2845d3be14e22db8aca8f4a39884549b13",
+        "bytes": 4600
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.html",
+        "sha256": "8a7425f1755695ca4b8fdc4d7da972d01640dfca42c8828b28217e3fbec778cf",
+        "bytes": 830948
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.checks-2\\xem kết quả tư vấn hướng nghiệp.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.checks-2\\xem kết quả tư vấn hướng nghiệp.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.checks-2\\xem kết quả tư vấn hướng nghiệp.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5219,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Nộp hồ sơ học bạ chứng chỉ giải thưởng",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+        "sha256": "3273a595a51b6a59cdde0b4fd851e17c65b9f5c39557f25369f0e718b25c0d38",
+        "bytes": 5169
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "sha256": "5f3e36a294437bc1d7b3939b856565edaa551719fad9290cd700629a8267dc7f",
+        "bytes": 833143
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.checks-2\\nộp hồ sơ học bạ chứng chỉ giải thưởng.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.checks-2\\nộp hồ sơ học bạ chứng chỉ giải thưởng.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.checks-2\\nộp hồ sơ học bạ chứng chỉ giải thưởng.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4952,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Dự đoán khả năng trúng tuyển",
+    "sprint": 2,
+    "output": "docs/squence/sprint_2/Dự đoán khả năng trúng tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.sequence.json",
+        "sha256": "727a58127df075774f19300f0b7f68a63ff269ffa94b3166244dd5ff41f6965b",
+        "bytes": 3879
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.html",
+        "sha256": "5cad0d0fac844fe8b821d09ffab602ce9cd2858c5fc84dcc10b6d960e1fb1838",
+        "bytes": 827715
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.checks-2\\dự đoán khả năng trúng tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.checks-2\\dự đoán khả năng trúng tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán khả năng trúng tuyển.checks-2\\dự đoán khả năng trúng tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4271,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Thống kê theo ngành học",
+    "sprint": 4,
+    "output": "docs/squence/sprint_4/Thống kê theo ngành học.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo ngành học.sequence.json",
+        "sha256": "4de62fbb26103ed9b6fbb8ce3c681d4f01e84efd90e5df64419ce15792e3f3f6",
+        "bytes": 4827
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo ngành học.html",
+        "sha256": "e9453ee57874fdb27baf3e40eb88a780c22b60281b7a83c9399b682e03f55c1c",
+        "bytes": 831543
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo ngành học.checks-2\\thống kê theo ngành học.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo ngành học.checks-2\\thống kê theo ngành học.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo ngành học.checks-2\\thống kê theo ngành học.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5057,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tra cứu trạng thái hồ sơ",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Tra cứu trạng thái hồ sơ.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.sequence.json",
+        "sha256": "9ea3395e91262fc6cdf0012496bc28518f9d6b76efd0523e83bae0dc2428ff84",
+        "bytes": 4624
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.html",
+        "sha256": "673493dd8e0234040c9c2b2222082cdb0fe6577ac1a14c7ebd99324db9389c95",
+        "bytes": 831399
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.checks-2\\tra cứu trạng thái hồ sơ.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.checks-2\\tra cứu trạng thái hồ sơ.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Tra cứu trạng thái hồ sơ.checks-2\\tra cứu trạng thái hồ sơ.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4592,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Xử lý lỗi khi duyệt và từ chối hồ sơ",
+    "sprint": 5,
+    "output": "docs/squence/sprint_5/Xử lý lỗi khi duyệt và từ chối hồ sơ.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.sequence.json",
+        "sha256": "fe813685cb9552645be7ee818f9bcde75e31fe3e6f50cff092c69813a4cd0618",
+        "bytes": 3924
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.html",
+        "sha256": "4f01e714fdc165972691cd90f8c1765a29c135e1677025989fa4a39b5732b488",
+        "bytes": 828354
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.checks-2\\xử lý lỗi khi duyệt và từ chối hồ sơ.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.checks-2\\xử lý lỗi khi duyệt và từ chối hồ sơ.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.checks-2\\xử lý lỗi khi duyệt và từ chối hồ sơ.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4320,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Thống kê theo phương thức và tổ hợp",
+    "sprint": 4,
+    "output": "docs/squence/sprint_4/Thống kê theo phương thức và tổ hợp.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.sequence.json",
+        "sha256": "63156e85f62d1b5bceb99e4136bc19e571511934fbc368e70c827e85866af297",
+        "bytes": 4863
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.html",
+        "sha256": "d35c972e7aa2f1083b20ef6af6067cd4a0ca85c8fe7583c1ae3d8bd37989dfd6",
+        "bytes": 831597
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.checks-2\\thống kê theo phương thức và tổ hợp.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.checks-2\\thống kê theo phương thức và tổ hợp.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê theo phương thức và tổ hợp.checks-2\\thống kê theo phương thức và tổ hợp.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4670,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển",
+    "sprint": 5,
+    "output": "docs/squence/sprint_5/Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.sequence.json",
+        "sha256": "c23a69b53791e1ff0a17327782ea5583c4c261d7033c7def3a1b7cea8ee5be0e",
+        "bytes": 3406
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.html",
+        "sha256": "a204ebc5208067577b32b1e7fb208d715e9b1b1ea0da4e030939d0956d1f1c22",
+        "bytes": 827456
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.checks-2\\tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.checks-2\\tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.checks-2\\tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4614,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Trắc nghiệm MBTI",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Trắc nghiệm MBTI.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.sequence.json",
+        "sha256": "54bde354a297f6bc9cc4740b2fc87ddb9cf8e305284b880f0067a9a942a042ba",
+        "bytes": 5558
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.html",
+        "sha256": "2a2af7fc7ec2bb941059882dba1b11de0202729a44c757ced6a57f5946ac0863",
+        "bytes": 835568
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.checks-2\\trắc nghiệm mbti.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.checks-2\\trắc nghiệm mbti.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Trắc nghiệm MBTI.checks-2\\trắc nghiệm mbti.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 5180,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Báo cáo kết quả trúng tuyển",
+    "sprint": 4,
+    "output": "docs/squence/sprint_4/Báo cáo kết quả trúng tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Báo cáo kết quả trúng tuyển.sequence.json",
+        "sha256": "56c1ae1856cc98657879441e91db7f0ea218586bb854a1a88bd549f7a56b10f0",
+        "bytes": 3253
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Báo cáo kết quả trúng tuyển.html",
+        "sha256": "a709db6a2f6847c5bb380660802b7bbf0082328e7578ad88a03f3e4b0e5fd4d3",
+        "bytes": 829042
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Báo cáo kết quả trúng tuyển.checks-2\\báo cáo kết quả trúng tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Báo cáo kết quả trúng tuyển.checks-2\\báo cáo kết quả trúng tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Báo cáo kết quả trúng tuyển.checks-2\\báo cáo kết quả trúng tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4728,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Lưu tin tức thật và làm mới giao diện",
+    "sprint": 5,
+    "output": "docs/squence/sprint_5/Lưu tin tức thật và làm mới giao diện.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.sequence.json",
+        "sha256": "62c7b1ce981a5a4ec3deddf3f84b5879629c7d8134d42b06f280d20b871b26b1",
+        "bytes": 3161
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.html",
+        "sha256": "888915acf82d6b03c34e46c7202e068128659222749687faae63db943a55f914",
+        "bytes": 828920
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.checks-2\\lưu tin tức thật và làm mới giao diện.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.checks-2\\lưu tin tức thật và làm mới giao diện.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Lưu tin tức thật và làm mới giao diện.checks-2\\lưu tin tức thật và làm mới giao diện.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4515,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Quản lý tri thức chatbot",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Quản lý tri thức chatbot.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.sequence.json",
+        "sha256": "ec88081ab33cf746040e3cd327cfc31552ffa74a7ac9280e05f3cdded646b3b3",
+        "bytes": 6055
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.html",
+        "sha256": "01fdc680528e70c7976a2cea37de594b7feff5e8b9448eb16f4546da738518fc",
+        "bytes": 836498
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.checks-2\\quản lý tri thức chatbot.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.checks-2\\quản lý tri thức chatbot.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.checks-2\\quản lý tri thức chatbot.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4433,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "In và lưu báo cáo PDF",
+    "sprint": 4,
+    "output": "docs/squence/sprint_4/In và lưu báo cáo PDF.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.sequence.json",
+        "sha256": "9f29fcc819356070009fcabc23ac9147247d3d2e932904c1d3a8b0909350d80f",
+        "bytes": 2729
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html",
+        "sha256": "2917d19749da77b51171e6148bacacfe1f03168c2332adc8a2e3c5a67fab3888",
+        "bytes": 826654
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.checks-2\\in và lưu báo cáo pdf.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.checks-2\\in và lưu báo cáo pdf.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.checks-2\\in và lưu báo cáo pdf.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4290,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Chốt điểm xét tuyển từ hồ sơ",
+    "sprint": 6,
+    "output": "docs/squence/sprint_6/Chốt điểm xét tuyển từ hồ sơ.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.sequence.json",
+        "sha256": "7a01097f73bc2511fa615726de214b076693bf4f4dc68c37cd0ceb0703b010a0",
+        "bytes": 5136
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.html",
+        "sha256": "f274b2814055869cba6f3380b59f648c8352f2561e671ad7052d150a00df0950",
+        "bytes": 833236
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.checks-2\\chốt điểm xét tuyển từ hồ sơ.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.checks-2\\chốt điểm xét tuyển từ hồ sơ.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.checks-2\\chốt điểm xét tuyển từ hồ sơ.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4178,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Chốt quyết định trúng tuyển",
+    "sprint": 6,
+    "output": "docs/squence/sprint_6/Chốt quyết định trúng tuyển.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.sequence.json",
+        "sha256": "80c4840a155766573947c9e77c739d842afc639cb8bf7f082e65124b1b097533",
+        "bytes": 3951
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.html",
+        "sha256": "7a952b0a62482438bfeed8cb0574a2d8325ed3e8321b632b3fee57715dda7a16",
+        "bytes": 829987
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.checks-2\\chốt quyết định trúng tuyển.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.checks-2\\chốt quyết định trúng tuyển.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.checks-2\\chốt quyết định trúng tuyển.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4171,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Công bố kết quả chính thức",
+    "sprint": 6,
+    "output": "docs/squence/sprint_6/Công bố kết quả chính thức.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.sequence.json",
+        "sha256": "498fa5b67e23ffedab1a754321cf4bb018f2fc627629b4a40087fe3add4c5b2d",
+        "bytes": 4420
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.html",
+        "sha256": "24e90593ff26ab25dd3efbd033c8f23d4a65baaeec1ede40c5fd9a92099c7c75",
+        "bytes": 830315
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.checks-2\\công bố kết quả chính thức.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.checks-2\\công bố kết quả chính thức.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Công bố kết quả chính thức.checks-2\\công bố kết quả chính thức.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 3961,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Tra cứu ngành học",
+    "sprint": 3,
+    "output": "docs/squence/sprint_3/Tra cứu ngành học.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.sequence.json",
+        "sha256": "5b0d893d66d77e3117a2664178081adea55f8ceaa4b73a2d323033da306d42ed",
+        "bytes": 4071
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.html",
+        "sha256": "4c0cd0e0c15341abc955cfee3c4a353609b6f485a8a46f459ded66fd649167a8",
+        "bytes": 830817
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.checks-3\\tra cứu ngành học.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.checks-3\\tra cứu ngành học.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu ngành học.checks-3\\tra cứu ngành học.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4133,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "title": "Thêm dữ liệu mẫu kiểm thử",
+    "sprint": 1,
+    "output": "docs/squence/sprint_1/Thêm dữ liệu mẫu kiểm thử.html",
+    "exitCode": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "sequence",
+      "quality": "showcase",
+      "specification": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.sequence.json",
+        "sha256": "9cfa6e4a8f0e30c0277c81cc731bdc4a64608d6f032f511e00f872179acbfdfa",
+        "bytes": 3710
+      },
+      "artifact": {
+        "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.html",
+        "sha256": "cf67820aa70ff8dc8732a67268fa821429cf39c866d7175f4eefd4d90c210493",
+        "bytes": 829681
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [
+        {
+          "code": "i18n/locale-fallback",
+          "severity": "warning",
+          "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+          "subject": {
+            "diagramType": "sequence",
+            "path": "/meta/locale"
+          },
+          "evidence": {
+            "locale": "vi",
+            "bundledLocales": [
+              "en",
+              "zh-CN",
+              "zh-TW",
+              "es",
+              "ko",
+              "ar"
+            ]
+          },
+          "supportedFixes": [
+            "Supply meta.translations for this locale.",
+            "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+          ]
+        }
+      ],
+      "diagnosticSummary": {
+        "total": 1,
+        "shown": 1,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.checks-3\\thêm dữ liệu mẫu kiểm thử.finalize.json",
+        "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.checks-3\\thêm dữ liệu mẫu kiểm thử.finalize-summary.json",
+        "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.checks-3\\thêm dữ liệu mẫu kiểm thử.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-25T12:54:38.611Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 4291,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  }
+]

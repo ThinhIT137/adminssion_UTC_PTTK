@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.sequence.json",
+    "sha256": "07a33e4085e7b4e96e8e708b65d668572b50c44c192448ca6fe4686b48fb9812",
+    "bytes": 3897
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.html",
+    "sha256": "c5ba145048be0dcf85b7f07ae1b520e21e70c11346850a1382ce67ac24ad7aa3",
+    "bytes": 831938
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [
+    {
+      "code": "i18n/locale-fallback",
+      "severity": "warning",
+      "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+      "subject": {
+        "diagramType": "sequence",
+        "path": "/meta/locale"
+      },
+      "evidence": {
+        "locale": "vi",
+        "bundledLocales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "ko",
+          "ar"
+        ]
+      },
+      "supportedFixes": [
+        "Supply meta.translations for this locale.",
+        "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.checks-2\\thiết lập chỉ tiêu tuyển sinh đầu mùa.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.checks-2\\thiết lập chỉ tiêu tuyển sinh đầu mùa.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.checks-2\\thiết lập chỉ tiêu tuyển sinh đầu mùa.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4655,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

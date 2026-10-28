@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "458bff6d-6952-454f-9f7b-f2c6f3ae4d34",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện quản trị.html",
+  "specification": {
+    "sha256": "c494dd5a3e3a2f37a463d05ce8602dca0f47f65d69312c19cc74b64827853e72",
+    "bytes": 3263
+  },
+  "artifact": {
+    "sha256": "aefbd81a4a7ae53ee6938cffcd9edb38e6233379b8f5fe1e6c6cc22f505a3cba",
+    "bytes": 827772
+  }
+}

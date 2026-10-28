@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.sequence.json",
+    "sha256": "0a9af71e66f5532ca7657bcd38df6c702c617a551de27006d73599d7f563ce1d",
+    "bytes": 4953
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.html",
+    "sha256": "f522ceb6eec72806e1ecc89d7b92f6f6a488f2f84e2d2f9dbb2047a6104ecbd2",
+    "bytes": 833007
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [
+    {
+      "code": "i18n/locale-fallback",
+      "severity": "warning",
+      "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+      "subject": {
+        "diagramType": "sequence",
+        "path": "/meta/locale"
+      },
+      "evidence": {
+        "locale": "vi",
+        "bundledLocales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "ko",
+          "ar"
+        ]
+      },
+      "supportedFixes": [
+        "Supply meta.translations for this locale.",
+        "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.checks\\đồng bộ tri thức chatbot sau cập nhật.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.checks\\đồng bộ tri thức chatbot sau cập nhật.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Đồng bộ tri thức Chatbot sau cập nhật.checks\\đồng bộ tri thức chatbot sau cập nhật.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3944,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

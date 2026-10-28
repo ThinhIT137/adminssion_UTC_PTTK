@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 5 · Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển",
+    "output": "docs/squence/sprint_5/Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Thí sinh",
+      "sublabel": "Tra cứu",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score service",
+      "sublabel": "Public status",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Yêu cầu trạng thái hồ sơ",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Đọc trang_thai và cong_bo_at",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Trạng thái đã lưu",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "caller",
+      "label": "Hợp lệ / xử lý / kết quả công bố",
+      "variant": "return",
+      "y": 344
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 5; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "hop_le không ánh xạ thành trúng tuyển. do/truot chưa công bố được che bằng dang_xu_ly ở public_status."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/services/result_state.py:1–15",
+        "backend_admission/backend_application_score/src/services/ho_so_service.py:1–357"
+      ]
+    }
+  ]
+}

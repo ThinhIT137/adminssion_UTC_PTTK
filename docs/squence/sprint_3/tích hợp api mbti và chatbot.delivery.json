@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "c97b00ce-39ec-4828-9bad-d0f71933dfc8",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tích hợp API MBTI và Chatbot.html",
+  "specification": {
+    "sha256": "8624191d4509d2df856386d7976de87f998df0696cd9c5d0ccd39d4c7c45a700",
+    "bytes": 3866
+  },
+  "artifact": {
+    "sha256": "4ff5f5a366f5a9a2d13e2c1b166e11d04fb1f83de6a039604cfa5be14fe9693e",
+    "bytes": 827835
+  }
+}

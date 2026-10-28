@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 3 · Tra cứu kết quả trúng tuyển",
+    "output": "docs/squence/sprint_3/Tra cứu kết quả trúng tuyển.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Thí sinh",
+      "sublabel": "Phiên hợp lệ",
+      "sources": [
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score service",
+      "sublabel": "Tra cứu kết quả",
+      "sources": [
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Tra cứu đúng hồ sơ",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Đọc quyết định và cong_bo_at",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Hồ sơ / không có",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "caller",
+      "label": "Đã công bố: đỗ / trượt",
+      "variant": "return",
+      "y": 344
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 3; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Chưa công bố: trả chua_cong_bo, không lộ quyết định. Trường hợp chưa có hồ sơ trả lỗi tương ứng."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/services/ho_so_service.py:1–357",
+        "backend_admission/backend_application_score/src/services/result_state.py:1–15",
+        "backend_admission/backend_application_score/src/router/ho_so_router.py:1–257"
+      ]
+    }
+  ]
+}

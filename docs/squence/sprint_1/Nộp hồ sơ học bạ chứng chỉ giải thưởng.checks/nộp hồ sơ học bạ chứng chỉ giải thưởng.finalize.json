@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "startedAt": "2026-10-25T12:55:01.172Z",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+    "sha256": "3273a595a51b6a59cdde0b4fd851e17c65b9f5c39557f25369f0e718b25c0d38",
+    "bytes": 5169
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+    "sha256": "5f3e36a294437bc1d7b3939b856565edaa551719fad9290cd700629a8267dc7f",
+    "bytes": 833143
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\backend_admission\\backend_application_score",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "3273a595a51b6a59cdde0b4fd851e17c65b9f5c39557f25369f0e718b25c0d38",
+          "bytes": 5169
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 840,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\backend_admission\\backend_application_score",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "340f30f2-908e-4896-91cc-6813bc46af10",
+        "ok": true,
+        "command": "deliver",
+        "type": "sequence",
+        "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.sequence.json",
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "specification": {
+          "sha256": "3273a595a51b6a59cdde0b4fd851e17c65b9f5c39557f25369f0e718b25c0d38",
+          "bytes": 5169
+        },
+        "artifact": {
+          "sha256": "5f3e36a294437bc1d7b3939b856565edaa551719fad9290cd700629a8267dc7f",
+          "bytes": 833143
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "evidence": {
+          "verified": true,
+          "repository": "https://github.com/ThinhIT137/backend_application_score",
+          "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+          "references": 12,
+          "linkMode": "local-only"
+        },
+        "diagnostics": [
+          {
+            "code": "i18n/locale-fallback",
+            "severity": "warning",
+            "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+            "subject": {
+              "diagramType": "sequence",
+              "path": "/meta/locale"
+            },
+            "evidence": {
+              "locale": "vi",
+              "bundledLocales": [
+                "en",
+                "zh-CN",
+                "zh-TW",
+                "es",
+                "ko",
+                "ar"
+              ]
+            },
+            "supportedFixes": [
+              "Supply meta.translations for this locale.",
+              "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+            ]
+          }
+        ],
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      },
+      "stderr": "archify: meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English."
+    },
+    "check": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 122,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "check",
+        "provenance": "locked",
+        "artifact": {
+          "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html"
+        },
+        "error": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+        "file": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "diagnostic": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+        "diagnostics": [
+          {
+            "code": "delivery/provenance-locked",
+            "severity": "error",
+            "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+            "subject": {
+              "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+              "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json"
+            },
+            "evidence": {
+              "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json",
+              "found": true
+            },
+            "supportedFixes": [
+              "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "delivery/provenance-locked",
+      "severity": "error",
+      "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+      "subject": {
+        "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json",
+        "found": true
+      },
+      "supportedFixes": [
+        "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.checks\\nộp hồ sơ học bạ chứng chỉ giải thưởng.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Nộp hồ sơ học bạ chứng chỉ giải thưởng.checks\\nộp hồ sơ học bạ chứng chỉ giải thưởng.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "check",
+  "finishedAt": "2026-10-25T12:55:02.607Z",
+  "durationMs": 1434,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

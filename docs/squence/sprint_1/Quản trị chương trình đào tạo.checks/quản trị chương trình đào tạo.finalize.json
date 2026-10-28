@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "startedAt": "2026-10-25T12:54:59.644Z",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.sequence.json",
+    "sha256": "58825a418b53d391ac484928ad8c2af2d24c9e155a5e7912ed3bcffc1f49637e",
+    "bytes": 3867
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html"
+  },
+  "stages": {
+    "validate": {
+      "status": "not-run",
+      "execution": "embedded-in-deliver"
+    },
+    "deliver": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 160,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\frontend_admission",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "deliver",
+        "receiptId": "1339f773-83e5-4630-87e3-7a285d710dd0",
+        "stage": "prepare",
+        "type": "sequence",
+        "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.sequence.json",
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html",
+        "error": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\".",
+        "diagnostics": [
+          {
+            "code": "delivery/concurrent-attempt",
+            "severity": "error",
+            "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\".",
+            "subject": {
+              "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html",
+              "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json"
+            },
+            "evidence": {
+              "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\"."
+            },
+            "supportedFixes": [
+              "wait for the active delivery to finish, then retry"
+            ]
+          }
+        ],
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "delivery/concurrent-attempt",
+      "severity": "error",
+      "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\".",
+      "subject": {
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_1\\.archify-delivery-lock.json\"."
+      },
+      "supportedFixes": [
+        "wait for the active delivery to finish, then retry"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.checks\\quản trị chương trình đào tạo.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản trị chương trình đào tạo.checks\\quản trị chương trình đào tạo.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "deliver",
+  "finishedAt": "2026-10-25T12:55:00.075Z",
+  "durationMs": 431,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "74329000-9c1c-4f51-b247-1a8110a884fb",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Hiển thị giao diện và bố cục thí sinh.html",
+  "specification": {
+    "sha256": "b29199a0e530c351c72e18f05f6d0638a860d7f1cd538995a5451914ff0d4da4",
+    "bytes": 2864
+  },
+  "artifact": {
+    "sha256": "d93b7d241c1c4bdb256a01c04d2d15826db508e3d2216eeb2a77c934c2e58660",
+    "bytes": 827302
+  }
+}

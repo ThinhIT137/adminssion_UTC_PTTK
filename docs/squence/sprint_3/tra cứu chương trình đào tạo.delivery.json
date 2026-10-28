@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "8b93b25e-5c21-4ba5-88b1-d98324ab1e86",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu chương trình đào tạo.html",
+  "specification": {
+    "sha256": "8cd3c1ef208311e80fd2979e3b783f5aa83f6d371b6c7452e2bf15fe153af9de",
+    "bytes": 4099
+  },
+  "artifact": {
+    "sha256": "5c4fd5a3519723cb5f4544062c3b34b36a044821ab8ea54dd0f857f4b3744abc",
+    "bytes": 830860
+  }
+}

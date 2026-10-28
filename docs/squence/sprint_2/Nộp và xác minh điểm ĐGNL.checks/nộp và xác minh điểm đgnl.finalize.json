@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "startedAt": "2026-10-25T12:55:08.489Z",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.sequence.json",
+    "sha256": "b6691765b31c304b20926c548a8c6ac4f942e39ad31d0f84a859863f007f0d75",
+    "bytes": 5723
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+    "sha256": "4bfde2307b3105f2f27321778cdae718f148c68a3865511b2b2cbab3f9061d7d",
+    "bytes": 836416
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\backend_admission\\backend_application_score",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "b6691765b31c304b20926c548a8c6ac4f942e39ad31d0f84a859863f007f0d75",
+          "bytes": 5723
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 866,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\backend_admission\\backend_application_score",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "0a53b146-ee2a-494b-bb3d-cfd8ee69a27e",
+        "ok": true,
+        "command": "deliver",
+        "type": "sequence",
+        "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.sequence.json",
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "specification": {
+          "sha256": "b6691765b31c304b20926c548a8c6ac4f942e39ad31d0f84a859863f007f0d75",
+          "bytes": 5723
+        },
+        "artifact": {
+          "sha256": "4bfde2307b3105f2f27321778cdae718f148c68a3865511b2b2cbab3f9061d7d",
+          "bytes": 836416
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "evidence": {
+          "verified": true,
+          "repository": "https://github.com/ThinhIT137/backend_application_score",
+          "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+          "references": 12,
+          "linkMode": "local-only"
+        },
+        "diagnostics": [
+          {
+            "code": "i18n/locale-fallback",
+            "severity": "warning",
+            "message": "meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English.",
+            "subject": {
+              "diagramType": "sequence",
+              "path": "/meta/locale"
+            },
+            "evidence": {
+              "locale": "vi",
+              "bundledLocales": [
+                "en",
+                "zh-CN",
+                "zh-TW",
+                "es",
+                "ko",
+                "ar"
+              ]
+            },
+            "supportedFixes": [
+              "Supply meta.translations for this locale.",
+              "Use a bundled locale: en, zh-CN, zh-TW, es, ko, ar."
+            ]
+          }
+        ],
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      },
+      "stderr": "archify: meta.locale \"vi\" has no bundled catalog and no usable meta.translations; the Viewer chrome and <html lang> fall back to English."
+    },
+    "check": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 123,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "check",
+        "provenance": "locked",
+        "artifact": {
+          "path": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html"
+        },
+        "error": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+        "file": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "diagnostic": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+        "diagnostics": [
+          {
+            "code": "delivery/provenance-locked",
+            "severity": "error",
+            "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+            "subject": {
+              "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+              "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\.archify-delivery-lock.json"
+            },
+            "evidence": {
+              "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\.archify-delivery-lock.json",
+              "found": true
+            },
+            "supportedFixes": [
+              "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "delivery/provenance-locked",
+      "severity": "error",
+      "message": "Delivery ownership is unresolved while the output lock remains; complete or recover delivery before trusting this artifact.",
+      "subject": {
+        "artifact": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "deliveryLock": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\.archify-delivery-lock.json",
+        "found": true
+      },
+      "supportedFixes": [
+        "finish the active delivery or inspect and recover the preserved lock, then rerun deliver successfully"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.checks\\nộp và xác minh điểm đgnl.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Nộp và xác minh điểm ĐGNL.checks\\nộp và xác minh điểm đgnl.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "check",
+  "finishedAt": "2026-10-25T12:55:10.045Z",
+  "durationMs": 1556,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9b62b7d0-db39-4bd7-929c-720318fcc669",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý tri thức chatbot.html",
+  "specification": {
+    "sha256": "ec88081ab33cf746040e3cd327cfc31552ffa74a7ac9280e05f3cdded646b3b3",
+    "bytes": 6055
+  },
+  "artifact": {
+    "sha256": "01fdc680528e70c7976a2cea37de594b7feff5e8b9448eb16f4546da738518fc",
+    "bytes": 836498
+  }
+}

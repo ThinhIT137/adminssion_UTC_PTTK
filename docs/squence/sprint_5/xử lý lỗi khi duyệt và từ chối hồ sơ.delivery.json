@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "4964d4b0-dc89-4c9b-9de7-1a0bc61f5386",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Xử lý lỗi khi duyệt và từ chối hồ sơ.html",
+  "specification": {
+    "sha256": "fe813685cb9552645be7ee818f9bcde75e31fe3e6f50cff092c69813a4cd0618",
+    "bytes": 3924
+  },
+  "artifact": {
+    "sha256": "4f01e714fdc165972691cd90f8c1765a29c135e1677025989fa4a39b5732b488",
+    "bytes": 828354
+  }
+}

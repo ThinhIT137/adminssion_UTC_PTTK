@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "0ad2fe70-8d6d-4980-a564-ccab2e750096",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Thêm dữ liệu mẫu kiểm thử.html",
+  "specification": {
+    "sha256": "9cfa6e4a8f0e30c0277c81cc731bdc4a64608d6f032f511e00f872179acbfdfa",
+    "bytes": 3710
+  },
+  "artifact": {
+    "sha256": "cf67820aa70ff8dc8732a67268fa821429cf39c866d7175f4eefd4d90c210493",
+    "bytes": 829681
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a0a6c339-dde3-48e3-9486-f62719990e6a",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Dự đoán điểm chuẩn chương trình.html",
+  "specification": {
+    "sha256": "47e01e4368b8aa33cc12983b3b4e27dd5b9d551602e10bda7610ce2016847a5b",
+    "bytes": 5720
+  },
+  "artifact": {
+    "sha256": "e55f3d70d40466ad3d2c7ce4beb844fa7a7e914165f2233c841c50a4cd144c9a",
+    "bytes": 833708
+  }
+}

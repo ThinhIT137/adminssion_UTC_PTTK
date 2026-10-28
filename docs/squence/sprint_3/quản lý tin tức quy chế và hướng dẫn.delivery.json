@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "67474c90-6a70-4909-914c-689c17538ebb",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Quản lý tin tức quy chế và hướng dẫn.html",
+  "specification": {
+    "sha256": "bac8b781494c00be4ef7440646eb46bccf290a77671f3f33807d5858bf877256",
+    "bytes": 3915
+  },
+  "artifact": {
+    "sha256": "37921ad1561f64d8c86e78f44deb97403249f7f602e5963181e2c5aeae64f60b",
+    "bytes": 832483
+  }
+}

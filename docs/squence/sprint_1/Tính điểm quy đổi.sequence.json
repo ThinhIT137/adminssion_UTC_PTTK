@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Tính điểm quy đổi",
+    "output": "docs/squence/sprint_1/Tính điểm quy đổi.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js",
+      "sublabel": "Đầu vào thí sinh",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "path": "src/services/score_preview.py",
+          "line": 1,
+          "end_line": 50
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score API",
+      "sublabel": "/diem/tinh-diem-doi-soat",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "path": "src/services/score_preview.py",
+          "line": 1,
+          "end_line": 50
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "path": "src/services/score_preview.py",
+          "line": 1,
+          "end_line": 50
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "scale",
+      "type": "database",
+      "label": "JSON quy đổi",
+      "sublabel": "Bảng năm 2026",
+      "sources": [
+        {
+          "path": "src/router/diem_router.py",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "path": "src/services/score_preview.py",
+          "line": 1,
+          "end_line": 50
+        },
+        {
+          "path": "src/services/conversion_service.py",
+          "line": 1,
+          "end_line": 29
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Gửi điểm và phương thức",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "db",
+      "label": "Đọc tổ hợp và tên môn",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "db",
+      "to": "api",
+      "label": "Danh mục môn",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "api",
+      "to": "scale",
+      "label": "Học bạ / HSA / TSA nếu cần",
+      "variant": "default",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "scale",
+      "to": "api",
+      "label": "Điểm tương đương / lỗi",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Tổng điểm và lưu ý sơ bộ",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "THPT giữ điểm gốc, không cần bước quy đổi JSON. Chứng chỉ chưa có công thức trả trạng thái thiếu cấu hình.",
+        "Backend trả phép tính điểm; Next.js chịu trách nhiệm trình bày, chênh lệch và phân nhóm tham khảo."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/diem_router.py:30–32",
+        "backend_admission/backend_application_score/src/services/score_preview.py:1–50",
+        "backend_admission/backend_application_score/src/services/conversion_service.py:1–29"
+      ]
+    }
+  ]
+}

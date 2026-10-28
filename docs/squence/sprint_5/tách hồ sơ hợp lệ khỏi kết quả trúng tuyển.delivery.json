@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7e980b60-5599-4fbd-95f1-3cf212b19665",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_5\\Tách hồ sơ hợp lệ khỏi kết quả trúng tuyển.html",
+  "specification": {
+    "sha256": "c23a69b53791e1ff0a17327782ea5583c4c261d7033c7def3a1b7cea8ee5be0e",
+    "bytes": 3406
+  },
+  "artifact": {
+    "sha256": "a204ebc5208067577b32b1e7fb208d715e9b1b1ea0da4e030939d0956d1f1c22",
+    "bytes": 827456
+  }
+}

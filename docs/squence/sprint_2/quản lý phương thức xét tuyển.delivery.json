@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "ca8a4f7c-c266-49b0-a84d-e9a22d17cae5",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Quản lý phương thức xét tuyển.html",
+  "specification": {
+    "sha256": "f3cc602ea494dd36038f792f96ba5564c518447ae3b977f3108f80336d10243d",
+    "bytes": 3866
+  },
+  "artifact": {
+    "sha256": "de2a8b9374086a377b31bad94841f78cb873ff2c83ef817585a4e68637284728",
+    "bytes": 832407
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "322e799c-7583-40b0-9c6e-5303afe92b58",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Thiết lập chỉ tiêu tuyển sinh đầu mùa.html",
+  "specification": {
+    "sha256": "07a33e4085e7b4e96e8e708b65d668572b50c44c192448ca6fe4686b48fb9812",
+    "bytes": 3897
+  },
+  "artifact": {
+    "sha256": "c5ba145048be0dcf85b7f07ae1b520e21e70c11346850a1382ce67ac24ad7aa3",
+    "bytes": 831938
+  }
+}

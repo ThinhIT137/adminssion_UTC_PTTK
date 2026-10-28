@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "21a34020-777a-4865-b6b9-b2312a5b35e0",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Xem kết quả tư vấn hướng nghiệp.html",
+  "specification": {
+    "sha256": "c8617dc564fa506659632349a4c16e2845d3be14e22db8aca8f4a39884549b13",
+    "bytes": 4600
+  },
+  "artifact": {
+    "sha256": "8a7425f1755695ca4b8fdc4d7da972d01640dfca42c8828b28217e3fbec778cf",
+    "bytes": 830948
+  }
+}

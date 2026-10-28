@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 2 · Duyệt xử lý hồ sơ thí sinh",
+    "output": "docs/squence/sprint_2/Duyệt xử lý hồ sơ thí sinh.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Cán bộ tuyển sinh",
+      "sublabel": "JWT admin",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 105,
+          "end_line": 140
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score API",
+      "sublabel": "Duyệt / từ chối",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 105,
+          "end_line": 140
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "type": "backend",
+      "label": "Service",
+      "sublabel": "Xử lý nghiệp vụ",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 105,
+          "end_line": 140
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 105,
+          "end_line": 140
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Duyệt hoặc từ chối",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "svc",
+      "label": "Gửi danh tính cán bộ",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "svc",
+      "to": "db",
+      "label": "Đọc hồ sơ phải còn chờ",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "svc",
+      "label": "Hồ sơ / lỗi",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "svc",
+      "to": "db",
+      "label": "Ghi hợp lệ hoặc từ chối",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "db",
+      "to": "svc",
+      "label": "Lưu trong transaction",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "svc",
+      "to": "api",
+      "label": "Trạng thái mới",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "caller",
+      "label": "Thành công / lỗi nghiệp vụ",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 2; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Từ chối cần lý do; duyệt hợp lệ chưa tạo quyết định đỗ."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/ho_so_router.py:1–257",
+        "backend_admission/backend_application_score/src/services/ho_so_service.py:105–140",
+        "backend_admission/backend_application_score/src/core/database.py:1–43"
+      ]
+    }
+  ]
+}

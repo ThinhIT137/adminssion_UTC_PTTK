@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "6d94721b-b791-40ea-ac76-0a5c263f8ed9",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt điểm xét tuyển từ hồ sơ.html",
+  "specification": {
+    "sha256": "7a01097f73bc2511fa615726de214b076693bf4f4dc68c37cd0ceb0703b010a0",
+    "bytes": 5136
+  },
+  "artifact": {
+    "sha256": "f274b2814055869cba6f3380b59f648c8352f2561e671ad7052d150a00df0950",
+    "bytes": 833236
+  }
+}

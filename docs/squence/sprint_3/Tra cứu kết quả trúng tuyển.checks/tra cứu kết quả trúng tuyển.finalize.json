@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "startedAt": "2026-10-25T12:55:14.770Z",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.sequence.json",
+    "sha256": "b481d700d734bf18c3c7766cef337fb024d0dcd2955e1cf4e695db27a8a99757",
+    "bytes": 3803
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html"
+  },
+  "stages": {
+    "validate": {
+      "status": "not-run",
+      "execution": "embedded-in-deliver"
+    },
+    "deliver": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 189,
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "C:\\Users\\Admin\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "sequence",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.sequence.json",
+        "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Project\\project_1\\backend_admission\\backend_application_score",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "deliver",
+        "receiptId": "ce9a5074-e644-45b1-99e8-161bf7b415bc",
+        "stage": "prepare",
+        "type": "sequence",
+        "input": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.sequence.json",
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html",
+        "error": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json\".",
+        "diagnostics": [
+          {
+            "code": "delivery/concurrent-attempt",
+            "severity": "error",
+            "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json\".",
+            "subject": {
+              "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html",
+              "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json"
+            },
+            "evidence": {
+              "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json\"."
+            },
+            "supportedFixes": [
+              "wait for the active delivery to finish, then retry"
+            ]
+          }
+        ],
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "delivery/concurrent-attempt",
+      "severity": "error",
+      "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json\".",
+      "subject": {
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_3\\.archify-delivery-lock.json\"."
+      },
+      "supportedFixes": [
+        "wait for the active delivery to finish, then retry"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.checks\\tra cứu kết quả trúng tuyển.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_3\\Tra cứu kết quả trúng tuyển.checks\\tra cứu kết quả trúng tuyển.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "deliver",
+  "finishedAt": "2026-10-25T12:55:15.220Z",
+  "durationMs": 450,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

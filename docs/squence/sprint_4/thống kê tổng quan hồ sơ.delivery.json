@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "cf9d9766-96ac-4e79-8e63-bbba717a8464",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Thống kê tổng quan hồ sơ.html",
+  "specification": {
+    "sha256": "4cdcb472d6637482daac3752e75674ecf6807b743cc2c884940b0d37944faafe",
+    "bytes": 4833
+  },
+  "artifact": {
+    "sha256": "adbcef6f682aa197a823974c1c2b077697dfd79fa05c7ffb296d7ca6d29040ce",
+    "bytes": 831552
+  }
+}

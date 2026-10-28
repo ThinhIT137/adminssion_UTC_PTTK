@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "c7d7027d-b612-453a-9812-9cf10f14231c",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\In và lưu báo cáo PDF.html",
+  "specification": {
+    "sha256": "9f29fcc819356070009fcabc23ac9147247d3d2e932904c1d3a8b0909350d80f",
+    "bytes": 2729
+  },
+  "artifact": {
+    "sha256": "2917d19749da77b51171e6148bacacfe1f03168c2332adc8a2e3c5a67fab3888",
+    "bytes": 826654
+  }
+}

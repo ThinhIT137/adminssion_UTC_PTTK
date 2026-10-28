@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "918c0846-d116-47c4-aa41-f6605112f261",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_4\\Xuất báo cáo CSV.html",
+  "specification": {
+    "sha256": "c6e2fd4257bbd64d758afe4f477d686d3f7fcf51e7dce1e2a0336dc8a8abf676",
+    "bytes": 2770
+  },
+  "artifact": {
+    "sha256": "be9e21b098e4514ed20d435559d2c78387dc228ad43b6d6d72ff7150a672e419",
+    "bytes": 826680
+  }
+}

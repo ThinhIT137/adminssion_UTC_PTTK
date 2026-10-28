@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Tra cứu trạng thái hồ sơ",
+    "output": "docs/squence/sprint_1/Tra cứu trạng thái hồ sơ.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Thí sinh",
+      "sublabel": "Phiên và mã hồ sơ",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score API",
+      "sublabel": "Tra cứu hồ sơ",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "type": "backend",
+      "label": "Service",
+      "sublabel": "Xử lý nghiệp vụ",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/ho_so_router.py",
+          "line": 1,
+          "end_line": 257
+        },
+        {
+          "path": "src/services/ho_so_service.py",
+          "line": 1,
+          "end_line": 357
+        },
+        {
+          "path": "src/services/result_state.py",
+          "line": 1,
+          "end_line": 15
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "Tra cứu hồ sơ của mình",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "svc",
+      "label": "Xác minh chủ hồ sơ",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "svc",
+      "to": "db",
+      "label": "Đọc hồ sơ và trạng thái",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "svc",
+      "label": "Hồ sơ / kết quả",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "svc",
+      "to": "api",
+      "label": "Che quyết định chưa công bố",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Trạng thái được phép xem",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Hợp lệ không có nghĩa đã trúng tuyển; kết quả public cần cong_bo_at và trạng thái do/truot."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/ho_so_router.py:1–257",
+        "backend_admission/backend_application_score/src/services/ho_so_service.py:1–357",
+        "backend_admission/backend_application_score/src/services/result_state.py:1–15"
+      ]
+    }
+  ]
+}

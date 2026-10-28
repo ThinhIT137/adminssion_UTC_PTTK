@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Quản lý dữ liệu điểm chuẩn các năm",
+    "output": "docs/squence/sprint_1/Quản lý dữ liệu điểm chuẩn các năm.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_application_score.git",
+      "revision": "1cd1281a115a7a97bddada3f05d8e3c70e9e941f",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Caller admin",
+      "sublabel": "JWT quản trị",
+      "sources": [
+        {
+          "path": "src/router/admission_router.py",
+          "line": 14,
+          "end_line": 44
+        },
+        {
+          "path": "src/services/admission_service.py",
+          "line": 20,
+          "end_line": 83
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "Score API",
+      "sublabel": "/diem-chuan",
+      "sources": [
+        {
+          "path": "src/router/admission_router.py",
+          "line": 14,
+          "end_line": 44
+        },
+        {
+          "path": "src/services/admission_service.py",
+          "line": 20,
+          "end_line": 83
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "type": "backend",
+      "label": "Service",
+      "sublabel": "Xử lý nghiệp vụ",
+      "sources": [
+        {
+          "path": "src/router/admission_router.py",
+          "line": 14,
+          "end_line": 44
+        },
+        {
+          "path": "src/services/admission_service.py",
+          "line": 20,
+          "end_line": 83
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/admission_router.py",
+          "line": 14,
+          "end_line": 44
+        },
+        {
+          "path": "src/services/admission_service.py",
+          "line": 20,
+          "end_line": 83
+        },
+        {
+          "path": "src/core/database.py",
+          "line": 1,
+          "end_line": 43
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "CRUD theo năm / chương trình",
+      "variant": "security",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "svc",
+      "label": "Yêu cầu có quyền admin",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "svc",
+      "to": "db",
+      "label": "Kiểm tra tham chiếu / trùng năm",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "svc",
+      "label": "Dữ liệu hiện tại",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "svc",
+      "to": "db",
+      "label": "Ghi lịch sử và điểm phương thức",
+      "variant": "default",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "db",
+      "to": "svc",
+      "label": "Flush dữ liệu",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "svc",
+      "to": "api",
+      "label": "Bản ghi / lỗi",
+      "variant": "return",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "caller",
+      "label": "Response sau transaction",
+      "variant": "return",
+      "y": 576
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_application_score @ 1cd1281a115a. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Giữ các điều kiện cũ khi payload không sửa; không cộng lặp chỉ tiêu theo phương thức."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_application_score/src/router/admission_router.py:14–44",
+        "backend_admission/backend_application_score/src/services/admission_service.py:20–83",
+        "backend_admission/backend_application_score/src/core/database.py:1–43"
+      ]
+    }
+  ]
+}

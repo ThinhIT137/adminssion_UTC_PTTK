@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 4 · Báo cáo kết quả trúng tuyển",
+    "output": "docs/squence/sprint_4/Báo cáo kết quả trúng tuyển.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/frontend_admission_UTC.git",
+      "revision": "f85d938356210193c70e3bf79e232587a1d04caa",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Người dùng",
+      "sublabel": "Giao diện trình duyệt",
+      "sources": [
+        {
+          "path": "services/backend-report.service.ts",
+          "line": 1,
+          "end_line": 109
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js",
+      "sublabel": "Server Action / API",
+      "sources": [
+        {
+          "path": "services/backend-report.service.ts",
+          "line": 1,
+          "end_line": 109
+        }
+      ]
+    },
+    {
+      "id": "score",
+      "type": "external",
+      "label": "Backend điểm",
+      "sublabel": "API báo cáo",
+      "sources": [
+        {
+          "path": "services/backend-report.service.ts",
+          "line": 1,
+          "end_line": 109
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "web",
+      "to": "next",
+      "label": "Mở báo cáo theo năm",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "next",
+      "to": "score",
+      "label": "GET trang 1, page_size=100",
+      "variant": "security",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "score",
+      "to": "next",
+      "label": "Dữ liệu + phân trang",
+      "variant": "return",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "next",
+      "to": "score",
+      "label": "Nếu còn trang: GET trang kế",
+      "variant": "security",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "score",
+      "to": "next",
+      "label": "Dữ liệu trang kế",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "next",
+      "to": "web",
+      "label": "Gom và ánh xạ báo cáo",
+      "variant": "return",
+      "y": 460
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 4; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào frontend_admission @ f85d93835621. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Lặp các trang còn lại tuần tự; trên 10.000 dòng báo lỗi thay vì xuất thiếu. Chưa có ngày sinh/giới tính trong mapping."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "frontend_admission/services/backend-report.service.ts:1–109"
+      ]
+    }
+  ]
+}

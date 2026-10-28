@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "47bc854f-261c-4ffd-aa9a-3a41cc783577",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Đối soát tra cứu thống kê và báo cáo.html",
+  "specification": {
+    "sha256": "e4bdd3816d4b82bf915f04b46f35b5b7b7ee07aa8fdf7ab1066227170f9775a9",
+    "bytes": 4878
+  },
+  "artifact": {
+    "sha256": "e5887f43e3fadd65d329072a49b39674c7028ed9e6c0ec76a5b0722c1996aeba",
+    "bytes": 831459
+  }
+}

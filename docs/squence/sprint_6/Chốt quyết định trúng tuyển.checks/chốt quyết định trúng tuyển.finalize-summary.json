@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.sequence.json",
+    "sha256": "80c4840a155766573947c9e77c739d842afc639cb8bf7f082e65124b1b097533",
+    "bytes": 3951
+  },
+  "artifact": {
+    "path": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.html"
+  },
+  "gates": {
+    "validate": "not-run",
+    "deliver": "fail",
+    "check": "not-run",
+    "browser-check": "not-run"
+  },
+  "failedStage": "deliver",
+  "diagnostics": [
+    {
+      "code": "delivery/concurrent-attempt",
+      "severity": "error",
+      "message": "Could not start delivery for \"D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.html\": Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_6\\.archify-delivery-lock.json\".",
+      "subject": {
+        "output": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.html",
+        "lock": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\.archify-delivery-lock.json"
+      },
+      "evidence": {
+        "reason": "Another delivery attempt owns \"D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.html\" through lock \"D:\\Project\\project_1\\docs\\squence\\sprint_6\\.archify-delivery-lock.json\"."
+      },
+      "supportedFixes": [
+        "wait for the active delivery to finish, then retry"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.checks\\chốt quyết định trúng tuyển.finalize.json",
+    "summaryReceipt": "D:\\Project\\project_1\\docs\\squence\\sprint_6\\Chốt quyết định trúng tuyển.checks\\chốt quyết định trúng tuyển.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-25T12:54:38.611Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 411,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  }
+}

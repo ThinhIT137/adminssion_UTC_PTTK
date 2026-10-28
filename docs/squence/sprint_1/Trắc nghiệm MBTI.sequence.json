@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Sprint 1 · Trắc nghiệm MBTI",
+    "output": "docs/squence/sprint_1/Trắc nghiệm MBTI.html",
+    "locale": "vi",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/ThinhIT137/backend_ai_ml.git",
+      "revision": "3c487756b7f3ddb98e4729c8a2c903c8a5c4b8eb",
+      "link_mode": "local-only"
+    }
+  },
+  "participants": [
+    {
+      "id": "caller",
+      "type": "external",
+      "label": "Next.js",
+      "sublabel": "API MBTI",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 1,
+          "end_line": 61
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 19,
+          "end_line": 76
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 18,
+          "end_line": 95
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "AI service",
+      "sublabel": "Chấm MBTI",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 1,
+          "end_line": 61
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 19,
+          "end_line": 76
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 18,
+          "end_line": 95
+        }
+      ]
+    },
+    {
+      "id": "repo",
+      "type": "backend",
+      "label": "Repository",
+      "sublabel": "Câu hỏi / kết quả",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 1,
+          "end_line": 61
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 19,
+          "end_line": 76
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 18,
+          "end_line": 95
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "sources": [
+        {
+          "path": "src/router/mbti_router.py",
+          "line": 1,
+          "end_line": 61
+        },
+        {
+          "path": "src/services/mbti_service.py",
+          "line": 19,
+          "end_line": 76
+        },
+        {
+          "path": "src/repositories/mbti_repository.py",
+          "line": 18,
+          "end_line": 95
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "message-1",
+      "from": "caller",
+      "to": "api",
+      "label": "GET bộ câu hỏi",
+      "variant": "default",
+      "y": 170
+    },
+    {
+      "id": "message-2",
+      "from": "api",
+      "to": "repo",
+      "label": "Nạp bộ câu hỏi",
+      "variant": "default",
+      "y": 228
+    },
+    {
+      "id": "message-3",
+      "from": "repo",
+      "to": "db",
+      "label": "SELECT câu hỏi active",
+      "variant": "default",
+      "y": 286
+    },
+    {
+      "id": "message-4",
+      "from": "db",
+      "to": "repo",
+      "label": "Câu hỏi / lỗi",
+      "variant": "return",
+      "y": 344
+    },
+    {
+      "id": "message-5",
+      "from": "repo",
+      "to": "api",
+      "label": "DB hoặc bộ mặc định",
+      "variant": "return",
+      "y": 402
+    },
+    {
+      "id": "message-6",
+      "from": "api",
+      "to": "caller",
+      "label": "Danh sách câu hỏi",
+      "variant": "return",
+      "y": 460
+    },
+    {
+      "id": "message-7",
+      "from": "caller",
+      "to": "api",
+      "label": "POST câu trả lời",
+      "variant": "default",
+      "y": 518
+    },
+    {
+      "id": "message-8",
+      "from": "api",
+      "to": "repo",
+      "label": "Lưu báo cáo đã chấm",
+      "variant": "default",
+      "y": 576
+    },
+    {
+      "id": "message-9",
+      "from": "repo",
+      "to": "db",
+      "label": "INSERT kết quả",
+      "variant": "default",
+      "y": 634
+    },
+    {
+      "id": "message-10",
+      "from": "db",
+      "to": "repo",
+      "label": "Mã kết quả / lỗi",
+      "variant": "return",
+      "y": 692
+    },
+    {
+      "id": "message-11",
+      "from": "repo",
+      "to": "api",
+      "label": "result_id hoặc null",
+      "variant": "return",
+      "y": 750
+    },
+    {
+      "id": "message-12",
+      "from": "api",
+      "to": "caller",
+      "label": "Báo cáo và mã kết quả",
+      "variant": "return",
+      "y": 808
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Phạm vi và cách đọc",
+      "items": [
+        "Luồng chức năng Sprint 1; thời gian và độ trễ không được đo.",
+        "Mũi tên nét đứt kiểu return là phản hồi. Điều kiện hoặc nhánh thay thế được ghi trong phần lưu ý.",
+        "Source neo vào backend_admission/backend_ai_ml_latest @ 3c487756b7f3. Không phải xác nhận production."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Giới hạn và phần chưa hoàn thiện",
+      "items": [
+        "Nếu đọc câu hỏi DB thất bại, AI dùng MBTI_QUESTIONS. Nếu lưu thất bại, frontend cần chặn điều hướng khi thiếu result_id."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Nguồn mã",
+      "items": [
+        "backend_admission/backend_ai_ml_latest/src/router/mbti_router.py:1–61",
+        "backend_admission/backend_ai_ml_latest/src/services/mbti_service.py:19–76",
+        "backend_admission/backend_ai_ml_latest/src/repositories/mbti_repository.py:18–95"
+      ]
+    }
+  ]
+}

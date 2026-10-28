@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "ccd6916c-1b0d-432a-b5ed-7f8aee674bab",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_1\\Quản lý dữ liệu điểm chuẩn các năm.html",
+  "specification": {
+    "sha256": "0d6156e716c878dc088d49156ff6dbcfecdd3344db5e7835062d1f3d8fc5fb3b",
+    "bytes": 4963
+  },
+  "artifact": {
+    "sha256": "10bbc261f5b58a63a8dfb43bca113094313674b3c2eeb648c7103852dcb90b9d",
+    "bytes": 832929
+  }
+}

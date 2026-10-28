@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "e692ef5d-5b36-485b-95c6-4739cd97f0e8",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.sequence.json",
+  "output": "D:\\Project\\project_1\\docs\\squence\\sprint_2\\Cập nhật trạng thái xét tuyển.html",
+  "specification": {
+    "sha256": "db8dd830aaee065437a9807fcf22fbe04222f3f61bbb6b8a80225d6c54831e21",
+    "bytes": 3672
+  },
+  "artifact": {
+    "sha256": "564f54f5976a6fdfeacf36b6efff04ab1abaf74b7f018e42b4302fe060faff44",
+    "bytes": 829165
+  }
+}
